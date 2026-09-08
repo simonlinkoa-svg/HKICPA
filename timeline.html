@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-page-node-id="FAVIdCxfBVCOs8dFuCGxry">
+<head data-page-node-id="kvJAuAm69GuXdHS1HDGqHh">
+<meta charset="UTF-8" data-page-node-id="6ocZH6kG6O7Um4f3T7PF9A">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" data-page-node-id="7LrePsdByUrtFNDBGBTyMn">
+<title>2026 主时间表 · HKICPA M13+M12 考试与事项</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:#0f141a; color:#e8eef2; font-family:"Segoe UI","PingFang SC","Microsoft YaHei",system-ui,sans-serif; line-height:1.6; padding:28px 18px 60px; }
+  .wrap { max-width:1080px; margin:0 auto; }
+  h1 { font-size:21px; font-weight:600; }
+  .sub { color:#9fb0bd; font-size:13px; margin-top:4px; }
+  .chips { display:flex; flex-wrap:wrap; gap:8px; margin:14px 0 4px; }
+  .chip { padding:5px 12px; border-radius:8px; font-size:12.5px; border:1px solid #2a3642; background:#171f26; }
+  .chip b { color:#fff; }
+  .chip .date { color:#ffd9a0; font-weight:600; }
+
+  .exam-banner { display:flex; flex-wrap:wrap; gap:12px; margin:14px 0 4px; }
+  .exam-card { flex:1; min-width:220px; background:#3a2a12; border:1px solid #8a6a26; border-radius:12px; padding:14px 16px; }
+  .exam-card .big { font-size:20px; font-weight:700; color:#ffd9a0; }
+  .exam-card .lbl { font-size:12px; color:#e8d5b0; }
+  .exam-card.ws { background:#1d2f4a; border-color:#335a7a; }
+  .exam-card.ws .big { color:#b9d4f0; font-size:16px; }
+  .exam-card.ws .lbl { color:#c6d8ee; }
+  .exam-card.ok { background:#1d3a30; border-color:#2f6b57; }
+  .exam-card.ok .big { color:#9fe1cb; font-size:16px; }
+  .exam-card.ok .lbl { color:#c0e6d5; }
+
+  h2 { font-size:15px; margin:24px 0 8px; padding-left:10px; border-left:3px solid #3f8f76; font-weight:600; }
+
+  .phasebar { display:flex; height:34px; border-radius:8px; overflow:hidden; font-size:11px; margin:10px 0 4px; }
+  .phasebar div { display:flex; align-items:center; justify-content:center; color:#0f141a; font-weight:600; letter-spacing:.3px; }
+  .pb-start { background:#9fe1cb; }
+  .pb-main { background:#5ec9a0; }
+  .pb-red { background:#e0857f; }
+  .pb-spr { background:#8db8e8; }
+  .pb-exam { background:#f0b85a; }
+  .phaselegend { display:flex; flex-wrap:wrap; gap:12px; font-size:11.5px; color:#9fb0bd; margin:4px 0 2px; }
+  .lg { display:flex; align-items:center; gap:5px; }
+  .dot { width:10px; height:10px; border-radius:3px; display:inline-block; }
+
+  .months { display:grid; grid-template-columns:repeat(2,1fr); gap:14px; }
+  @media (max-width:820px){ .months{ grid-template-columns:1fr; } }
+  .month { background:#171f26; border:1px solid #26313b; border-radius:12px; padding:12px; }
+  .month h3 { font-size:14px; color:#fff; margin-bottom:2px; }
+  .month .mtag { font-size:11.5px; color:#7fd0b0; margin-bottom:8px; }
+  table.cal { width:100%; border-collapse:collapse; table-layout:fixed; }
+  table.cal th { font-size:10.5px; color:#8b9aa6; font-weight:400; padding:2px 0; }
+  table.cal td { border:1px solid #232e38; text-align:center; height:52px; vertical-align:top; font-size:11px; padding:2px; background:#131a20; }
+  table.cal td.blank { border:none; background:transparent; }
+  table.cal td .d { display:block; font-size:11.5px; color:#c9d5dd; }
+  table.cal td.rest .d { color:#5d6c78; }
+  table.cal td.today { outline:2px solid #3f8f76; outline-offset:-2px; }
+  table.cal td.ev { background:#2a2210; }
+  table.cal td.ev .tag { display:block; font-size:9.5px; line-height:1.3; color:#ffd9a0; margin-top:1px; }
+  table.cal td.ws { background:#182338; }
+  table.cal td.ws .tag { color:#b9d4f0; }
+  table.cal td.exam { background:#3a2a12; }
+  table.cal td.exam .tag { font-size:10px; font-weight:700; color:#ffb34d; }
+  table.cal td.hol { background:#1f1414; }
+  table.cal td.hol .tag { color:#e0a8a4; font-size:9.5px; }
+
+  .fixed { background:#171f26; border:1px solid #26313b; border-radius:12px; padding:12px 16px; margin-top:10px; font-size:13px; color:#c6d2da; }
+  .fixed b { color:#fff; }
+  .fixed .hl { color:#ffd9a0; }
+
+  table.dyn { width:100%; border-collapse:collapse; font-size:13px; margin-top:8px; }
+  table.dyn th, table.dyn td { border:1px solid #2a3642; padding:7px 10px; text-align:left; }
+  table.dyn th { background:#1d2630; font-weight:600; color:#d7e2ea; }
+  table.dyn td { color:#c6d2da; }
+  .pill { display:inline-block; font-size:11px; padding:1px 8px; border-radius:999px; }
+  .pill.todo { background:#4a1f1d; color:#f0b9b6; }
+  .pill.hw { background:#1d2f4a; color:#b9d4f0; }
+  .pill.grp { background:#1d3a30; color:#9fe1cb; }
+  .pill.exam { background:#3a2a12; color:#ffd9a0; }
+  .pill.cls { background:#33291f; color:#e8d5b0; }
+  .foot { margin-top:22px; font-size:11.5px; color:#6b7a86; text-align:center; }
+  .note { background:#1a2128; border:1px dashed #3a4a56; border-radius:8px; padding:8px 12px; font-size:12px; color:#9fb0bd; margin-top:10px; }
+  .ok-row td { background:#12251d; }
+  @media (max-width:600px){
+    body { padding:18px 10px 48px; }
+    h1 { font-size:18px; }
+    .sub { font-size:12px; }
+    h2 { font-size:14px; margin:20px 0 8px; }
+    .chips { gap:6px; } .chip { font-size:12px; padding:4px 9px; }
+    .exam-card { padding:12px; min-width:0; }
+    .exam-card .big { font-size:17px; }
+    .exam-card.ws .big, .exam-card.ok .big { font-size:14.5px; }
+    .month { padding:10px; }
+    .month h3 { font-size:13px; }
+    .month .mtag { font-size:11px; }
+    table.cal td { height:46px; padding:1px; }
+    table.cal td .d { font-size:13px; }
+    table.cal td .tag { font-size:9.5px; line-height:1.2; }
+    .fixed { font-size:12.5px; padding:10px 12px; }
+    table.dyn { font-size:12.5px; }
+    table.dyn thead { display:none; }
+    table.dyn, table.dyn tbody, table.dyn tr, table.dyn td { display:block; width:100%; }
+    table.dyn tr { background:#171f26; border:1px solid #26313b; border-radius:10px; padding:10px 12px; margin-bottom:10px; border-left:3px solid #3f8f76; }
+    table.dyn td { border:none; padding:2px 0; }
+    table.dyn td:first-child { font-weight:700; color:#ffd9a0; font-size:13.5px; }
+    table.dyn td:nth-child(3) { margin:2px 0; }
+    table.dyn td:last-child { color:#9fb0bd; font-size:12px; }
+    .note { font-size:11.5px; }
+    .foot { font-size:10.5px; }
+  }
+</style>
+</head>
+<body data-page-node-id="8JmUKOkq7BdkZMfByL7sq5">
+<div class="wrap" data-page-node-id="lF37yHm5qCzwnioycilJad">
+
+  <h1 data-page-node-id="NwhRKSZwW5CJjppUA6h8ID">2026 主时间表 · HKICPA M13 + M12</h1>
+  <div class="sub" data-page-node-id="luMwG6zIAZLEsGK6u4pZlV">考试时间点 + 备考阶段 + 动态事项总台账（作业 / 小组任务 / 学校考试 / 课程调整，随时追加更新）</div>
+  <div class="chips" data-page-node-id="gMcJb8GJDY1Nr7rTrHP61X">
+    <div class="chip" data-page-node-id="PA3XVkeDXdypQDAnct3e7c"><b data-page-node-id="TFxqMQ63NRzXD9UkLBYitY">M13 业务鉴证</b> · 二战 · <span class="date" data-page-node-id="kONFapWSTdm6EZMGG4W3s8">考试 12/27(日)</span></div>
+    <div class="chip" data-page-node-id="fBXDi1nc3xWmZISc6T94WC"><b data-page-node-id="UtD8CzFJtiehpJYECGaBIE">M12 商业财务</b> · 新科 · <span class="date" data-page-node-id="gsBTHIv9GiJkgVqYtkhHxe">考试 12/28(一)</span></div>
+    <div class="chip" data-page-node-id="DzdZxT4Kxaqd44PCnNRw3g"><b data-page-node-id="a5YGZrRefxTxxfHfLcm68S">M12 工作坊</b> · <span class="date" data-page-node-id="EUK3zdCmAcuGZhezdyOyXa">11/1(日) 已确认</span></div>
+    <div class="chip" data-page-node-id="YD7gShu3utUZRpRWOyR17G"><b data-page-node-id="Z3BG1KzAvBDH5mCcns53YV">Master 上课</b> · <span class="date" data-page-node-id="UANpN3FDPgLDT3cFwK7e5v">周三/四/五/六</span></div>
+    <div class="chip" data-page-node-id="qJGGLzVQB6imRj5NoAB37v"><b data-page-node-id="noIPqrCEVNQxcTXE8sv0HC">Day-off</b> · <span class="date" data-page-node-id="gNOV8TiZH1OE647G3cXwvH">周日/一/二</span></div>
+  </div>
+
+  <h2 data-page-node-id="3CVC7IAGVY5jAFwFapydgu">考试时间点</h2>
+  <div class="exam-banner" data-page-node-id="DoAPAwGOUp4GCxCD1NYwke">
+    <div class="exam-card" data-page-node-id="tvVRyK86piIanorBxT5mxV"><div class="big" data-page-node-id="N52MYDbfK6BNUr93ZH2QBq">12/27（日）M13 业务鉴证</div><div class="lbl" data-page-node-id="NypaDR2hVNHaP0kqJElGM4">Business Assurance · 二战 · 16 周备考中</div></div>
+    <div class="exam-card" data-page-node-id="wgZLerxG48yl76oHzFQABY"><div class="big" data-page-node-id="AsdMloY74pNG34Yiy43Uit">12/28（一）M12 商业财务</div><div class="lbl" data-page-node-id="s47OlSdMjBQV1fJJsmQcGP">Business Finance · 新科 · 隔天一门，不冲突</div></div>
+    <div class="exam-card ws" data-page-node-id="x61ijl8aM02FlB05hmlcaT"><div class="big" data-page-node-id="ME8vVlaUQ4PZe1aJneCTCm">11/1（日）M12 工作坊</div><div class="lbl" data-page-node-id="arBky7mVv3Ac3K1ld70Un3">Workshop 已确认 · 考试先决条件 · 10/27 起自动提醒准备</div></div>
+    <div class="exam-card ok" data-page-node-id="iCoPCoKgY2awpbgLRhKYcJ"><div class="big" data-page-node-id="HoTW3KghOrbLaChmm7O6D4">M13 免工作坊 ✓</div><div class="lbl" data-page-node-id="edewxOy8kUfCFEwHFFlOTJ">6 月已参加 · 重考豁免 · 无需再选场次</div></div>
+  </div>
+  <div class="note" data-page-node-id="AaOpO73AxNg8N5dVFZy21E">成绩公布约 2027/2/25（明年）。Master 期末确切日期未确认，红区暂按 11/16–12/6 预留；收到考试时间表后校准。</div>
+
+  <h2 data-page-node-id="wFsaLJAnaJ2fLOwoa3P0DE">备考阶段总览</h2>
+  <div class="phasebar" data-page-node-id="l7LjXISvR4YnEpSl4hqGG1">
+    <div class="pb-start" style="flex:9.4" data-page-node-id="NCN9rtuXLTq2LcG2PAGuEm">启动期 9/7–10/4</div>
+    <div class="pb-main" style="flex:16.7" data-page-node-id="tF1FSsNo4b2ABVikWZ6PYF">主力窗口 10/5–11/8（M13 重建 + M12 精讲）</div>
+    <div class="pb-red" style="flex:14.6" data-page-node-id="koLpw6UMMT6cDVKblgsLiw">红区 11/9–12/6（Master 期末优先）</div>
+    <div class="pb-spr" style="flex:13.5" data-page-node-id="uQMY7cmHh8Smj4Cjpv7CEm">冲刺 12/7–12/26</div>
+    <div class="pb-exam" style="flex:4.2" data-page-node-id="6dXL1L8sSrwfpa7RhHD5Wi">考</div>
+  </div>
+  <div class="phaselegend" data-page-node-id="91sgCrPJruzoCwofbgpetz">
+    <span class="lg" data-page-node-id="aFEp1hnt8wzKhi8WLV6ARu"><span class="dot" style="background:#9fe1cb" data-page-node-id="DHKkBiFf8w9hDaC1BnIgZb"></span>启动：M13 补漏重建（P0: Q9→Q2→Q3）</span>
+    <span class="lg" data-page-node-id="hcd3IcRQOJnNSwP0LwSifX"><span class="dot" style="background:#5ec9a0" data-page-node-id="NSbbmZQJ1KJC8JO8a4pruM"></span>主力：M12 全新科精讲 + M13 重建并行</span>
+    <span class="lg" data-page-node-id="oiDdv4EDVaAU7CrhyPkAA7"><span class="dot" style="background:#e0857f" data-page-node-id="XEn5m02wYIuTxkPZn1tkcs"></span>红区：只保热感 2–3h/周</span>
+    <span class="lg" data-page-node-id="k18w4qkJavZrG8HmE2dDHk"><span class="dot" style="background:#8db8e8" data-page-node-id="f3NpzIoWXMMhstT2kI42ST"></span>冲刺：真题手写 ≥40%</span>
+    <span class="lg" data-page-node-id="94gUGPAUWRsgA2yTvfhqR4"><span class="dot" style="background:#f0b85a" data-page-node-id="pl5233EEdWvPKLc4JFO5HM"></span>考试</span>
+  </div>
+
+  <h2 data-page-node-id="maPgmzxbu5KyS9cOdaqCRH">月历</h2>
+  <div class="months" data-page-node-id="alUKZjvMqFjGTaWzGIsDB9">
+
+    <div class="month" data-page-node-id="Xw8To0icRb5cGguq3kaYPa">
+      <h3 data-page-node-id="2ixoFbcUtK7lGhbTaKDDtM">2026 · 9 月</h3>
+      <div class="mtag" data-page-node-id="akL42yzRv4O6Cd5cEt2tKl">启动期：M13 真题扫描完成 → 跟 P0 精讲（Q9 持续经营 → Q2 公允价值 → Q3 ITGC）；M12 只预习 1–2 章</div>
+      <table class="cal" data-page-node-id="yP0LcACBkkZGelZDPqyFxc">
+        <tr data-page-node-id="WYOSnvMf4FCxThxAJILwsL"><th data-page-node-id="HTSBrrfa99dmXwA5dUXBpz">日</th><th data-page-node-id="K9YcNAMM7XdFB5MxZ8H2zY">一</th><th data-page-node-id="2kgJlLRcOmOJacTUHV8azu">二</th><th data-page-node-id="ZPCEgQOJKvekuc6FOZoLR4">三</th><th data-page-node-id="9l9I6AuBltcpy71HiYEZQe">四</th><th data-page-node-id="uKjRXW1jXNCTJF9eUO4J0w">五</th><th data-page-node-id="DuPDg9xoov5uiF6vMjABrF">六</th></tr>
+        <tr data-page-node-id="n2HdYHSQY7LsX2YpJOeKQE"><td class="blank" data-page-node-id="4tnEzVxnOFb6iGFPmAlme2"></td><td class="blank" data-page-node-id="zxC2e3vtAHLcyIlBWjOtDH"></td><td data-page-node-id="puzQVNWbn5eCkCeyAjzv8j"><span class="d" data-page-node-id="fA2OtZtdvv136JwgIuPMdX">1</span></td><td data-page-node-id="fE30xtSvD4vEHkmhCxof8V"><span class="d" data-page-node-id="ADt0pugkT4haTVTJhxlsyl">2</span></td><td data-page-node-id="AYYOzr6Rc56MgETfvJXqFO"><span class="d" data-page-node-id="i4DMFvQcMVk7IiFk7n3m00">3</span></td><td data-page-node-id="JSp1tNlKQVAyofG7gsumC0"><span class="d" data-page-node-id="ZrYYECg89VIUSYOb71cDBS">4</span></td><td data-page-node-id="dNNovaNVh7l3CDKEBNPikR"><span class="d" data-page-node-id="OOBywH8nqm6OdX6OLdFsiI">5</span></td></tr>
+        <tr data-page-node-id="26KA9WpJ6ONOc62mC5AOQa"><td class="rest" data-page-node-id="lid0vnC4WOszxvOM9UiMdH"><span class="d" data-page-node-id="DMHTC62J1U5GSA0kAwiPnr">6</span></td><td data-page-node-id="JonWSMrsTIznsO2MjrbMAI"><span class="d" data-page-node-id="zD059uD8bqX1ogNVJU7KU7">7</span></td><td class="today" data-page-node-id="BaU6dHJMKSlbrqzwMJPCDB"><span class="d" data-page-node-id="V2QdbBR97dHKLHHTxiOZ1F">8</span><span class="tag" data-page-node-id="przEglT8CHfGTPwAtH9UTC">✓扫描</span></td><td data-page-node-id="3drpYZYdAYVdr3VqntqHLe"><span class="d" data-page-node-id="QmOuWtifG7Rugf3L1ddNQ0">9</span></td><td data-page-node-id="jditGe5X2s3eDwGKqpzgxB"><span class="d" data-page-node-id="JGaXeXBG8Tsa5NBwBGCxw2">10</span></td><td data-page-node-id="uCmLbO2V9LVxUnCFGpJHN7"><span class="d" data-page-node-id="iFBzOmhwlgdzc4xreWHKyc">11</span></td><td data-page-node-id="bB6C7n8B2borRU7WN6uQaf"><span class="d" data-page-node-id="BNWwDvrwslHSFzLkqba7GV">12</span></td></tr>
+        <tr data-page-node-id="fETYFhbXjFtFNJ0f978Bgz"><td class="rest" data-page-node-id="BPf61utDeJvF1S6EPHHybg"><span class="d" data-page-node-id="pOhCU3DkX5SXDE7zFs3txQ">13</span></td><td data-page-node-id="51CDIRU1Ik03HGMAGsLqbz"><span class="d" data-page-node-id="xjSNGy9FkvvV6BmXkGUuSw">14</span></td><td data-page-node-id="2xGuNCNnCyzfTpDQ8jBKZx"><span class="d" data-page-node-id="8EEopAaPWc3X2Eqe2AfwTn">15</span></td><td data-page-node-id="mV5oSagXAJzwJ659P52bFM"><span class="d" data-page-node-id="jrJXlDCHh1As6wsfQKp5XF">16</span></td><td data-page-node-id="irgZA9MwPu7aiFGLBVfW50"><span class="d" data-page-node-id="91OQmJ3knQnsqPFcuAG84U">17</span></td><td data-page-node-id="svq23emi2iDXPQZxyJMMB2"><span class="d" data-page-node-id="xsHGnaJqgZRzTxW67CHcS7">18</span></td><td class="ev" data-page-node-id="IKViMI9GZGU6UqdPwDNt2I"><span class="d" data-page-node-id="ECQQYkJCvuhAtJyTa4Kc3Q">19</span><span class="tag" data-page-node-id="rL9oYFYci8npvjCmN32XXd">IS5940×2 截止</span></td></tr>
+        <tr data-page-node-id="BrG6jCYlmmGDfWWMbmXzV0"><td class="rest" data-page-node-id="jm4mMbI5S8G28bz3qxWm8j"><span class="d" data-page-node-id="x3rF1LRVjolcHQf4Iw4XnI">20</span></td><td data-page-node-id="mRkpFVVAlNbyR3nRI3iMh7"><span class="d" data-page-node-id="cJtAMMkrtEGAonYsAEeK5m">21</span></td><td data-page-node-id="6Y17VkN3pzB1lkbHH5TQj6"><span class="d" data-page-node-id="jx86obH0mOJ49NJqQMnxtp">22</span></td><td data-page-node-id="sqCVpSDqXIqqmM8T0y7Yhd"><span class="d" data-page-node-id="3qKT4FpKD6XkpsDSoEsa8k">23</span></td><td data-page-node-id="7XJErZPZvleEGS6tQDqFa7"><span class="d" data-page-node-id="gC0DPYe4lhS65kczehqsIf">24</span></td><td data-page-node-id="CabUeAHCzTQH7oHzBlJfIE"><span class="d" data-page-node-id="N9x1YyF94EkJe20GmPKIX8">25</span></td><td class="hol" data-page-node-id="yUkd2k7X8ILVFCgkXOzagS"><span class="d" data-page-node-id="1IUbdeWq8nswkmFep76osx">26</span><span class="tag">中秋翌日</span><span class="tag" data-page-node-id="gT6D5p7qaGAMsiGwGjjHIq">IS5312 线上</span></td></tr>
+        <tr data-page-node-id="Vm6cZvAnYJpJY6EunsUD79"><td class="rest" data-page-node-id="vSvSurUrYrkTEBm1BeOWWu"><span class="d" data-page-node-id="6QUOZJbO54GObIznxWADng">27</span></td><td data-page-node-id="i74aBmHXW5vC5x45AbiF1c"><span class="d" data-page-node-id="t6o8yWnYzZRMi42BMhiEwe">28</span></td><td data-page-node-id="CeE5SnrpEytElRtboI1c25"><span class="d" data-page-node-id="aKDNCG3wNtKiGMs7MCPHH6">29</span></td><td data-page-node-id="3BZjS0mOBM8hhE2aIzImox"><span class="d" data-page-node-id="3Gt8J85izTGXh8wNgVXsgT">30</span></td><td class="blank" data-page-node-id="A5o4507XeBLCfim1VCVji9"></td><td class="blank" data-page-node-id="zvo5DSGRNyQtb6TVfBgWWh"></td><td class="blank" data-page-node-id="Qfi7l5iwQVHazg6ouWJRhc"></td></tr>
+      </table>
+    </div>
+
+    <div class="month" data-page-node-id="XM30g9fVC1wKF9claPPiEB">
+      <h3 data-page-node-id="EX1qyHxNAQttJabQ0428Cd">2026 · 10 月</h3>
+      <div class="mtag" data-page-node-id="E8KhgnMNZYiWqGsD40RcGN">主力窗口起跑：M12 精讲主体（10/5 起）+ M13 重建并行；10/26 起 M12 二轮 + M13 摸底</div>
+      <table class="cal" data-page-node-id="6PBv6GTiyfc7NsNnQbKPD3">
+        <tr data-page-node-id="cOjoEPe0yqfUYj4mTDR50o"><th data-page-node-id="PZ8BEN8q2tjJw9nGxHSExy">日</th><th data-page-node-id="OJ4dDGeTcxMO2WV5NthkqB">一</th><th data-page-node-id="nU1URrNd5PUff0GHwHYNhv">二</th><th data-page-node-id="RdXm9YmzKRvbeSIAHvt3AJ">三</th><th data-page-node-id="hnOmL1ywGGthazJM9YcwPj">四</th><th data-page-node-id="ZBJ5XH8Xsd0dpa4jSBrDRb">五</th><th data-page-node-id="TcCC3zcjn8OTeaKNEYHi8D">六</th></tr>
+        <tr data-page-node-id="GTJ6GY9MnFpCVbxDTZ2MXy"><td class="blank" data-page-node-id="MP7O6aZkIAZFeg8JswqmSu"></td><td class="blank" data-page-node-id="6nsxoMrKEyBCjNk9k4hMNT"></td><td class="blank" data-page-node-id="twfJ3N2400hobH7NerkwZi"></td><td class="blank" data-page-node-id="hxQaWWJqgVGPJQwmQOehlC"></td><td class="hol" data-page-node-id="OgwMph7cC7sJcVDrp740b0"><span class="d" data-page-node-id="AFrw3Cg6XRKc2jesAn4N4m">1</span><span class="tag" data-page-node-id="NFAP9WsJt70HK2aqFg9u8j">国庆(港假?)</span></td><td data-page-node-id="5yett51gOPDgGzsn0hi1rS"><span class="d" data-page-node-id="ROm2Cqg6ZyfFvkQKA0sYoV">2</span></td><td class="ev" data-page-node-id="sA5V51eZR796GX9OPEvroy"><span class="d" data-page-node-id="jHBOvGa2vP8H1BuO3KLXFe">3</span><span class="tag" data-page-node-id="XoIowdzQbm4BWqTqqQA9N5">IS5312 线上</span></td></tr>
+        <tr data-page-node-id="C1BVZxSac60DAy5EJjRD75"><td class="rest" data-page-node-id="4d2x1nju7a3QbAlLKayvHM"><span class="d" data-page-node-id="1cZv4tDVmPXYHxgwxkIDrr">4</span></td><td data-page-node-id="Xuiv1umDuTPmDPAnfYuavS"><span class="d" data-page-node-id="ZnSXFotFy9x8PG7DjesMBS">5</span></td><td data-page-node-id="QpUAsu4M8vghDyGt6sDwPc"><span class="d" data-page-node-id="OPJ3y7aYaiBUO9D2g7z3ez">6</span></td><td data-page-node-id="RuJ61s5KGTGqQls02Y0opo"><span class="d" data-page-node-id="9VuSenGi2w3H114CAOdJsu">7</span></td><td data-page-node-id="3yYX4VysDdjWFKuGYufVlf"><span class="d" data-page-node-id="bwniOSNFl3ZLSE46KmDiaR">8</span></td><td data-page-node-id="TPMG91Kx37BFLdIlWpeSkt"><span class="d" data-page-node-id="nAIawabVMth60RgpSMtUM1">9</span></td><td data-page-node-id="ejwoA2Y8tDfrq54cA9ux6t"><span class="d" data-page-node-id="x8znWmC8D46PyNFTvzJzSo">10</span></td></tr>
+        <tr data-page-node-id="r4zccn7n9lsNE1GZmYUcj9"><td class="rest" data-page-node-id="7owgKCjlCrt30roth70yK3"><span class="d" data-page-node-id="eSEFTS8E6fpwXH36KHL0aZ">11</span></td><td data-page-node-id="gwCMzu4mUvF1TvcHipskvP"><span class="d" data-page-node-id="P3Uxh85mSe8HfiI0PQ3eUI">12</span></td><td data-page-node-id="pBUKFQIZ08r40eguTUFFMc"><span class="d" data-page-node-id="vb8dNYOxpsXK1CTIqL00Kd">13</span></td><td data-page-node-id="r3DAbIUNGLAjcWazEKeoKz"><span class="d" data-page-node-id="GVHW7uiBRDfDUH8Obzvfu4">14</span></td><td data-page-node-id="y8ouwvQtdGfxs5eTNQ5TUn"><span class="d" data-page-node-id="cVgVb5Kvoup49B6tyJc4FN">15</span></td><td data-page-node-id="CObQaEyDf2zGZ3CiQ5SAbv"><span class="d" data-page-node-id="0fFA6zkEtGv5LbC4Njohex">16</span></td><td data-page-node-id="aFn1iIl9L09AUmkcdcyFQy"><span class="d" data-page-node-id="KCHjXDpQOpSJ1U62Wa3dZ2">17</span></td></tr>
+        <tr data-page-node-id="yQ3JMe3yokQ0jwtSETcvRq"><td class="rest" data-page-node-id="We9Ne2KC6XP3rseK9uxYBf"><span class="d" data-page-node-id="WMFgIyePT7Q0S6QajAnU35">18</span></td><td class="hol" data-page-node-id="BUStTdMFPJhYEps5DOauRX"><span class="d" data-page-node-id="yway3LyE9QJBVxbUpw6AZp">19</span><span class="tag">重阳翌日</span></td><td data-page-node-id="oXP0Db9m9Y3z9aGt8kQ2Qc"><span class="d" data-page-node-id="c5SOgGGwDX2K6Xy4o1loNn">20</span></td><td data-page-node-id="AMzJ8JhWjBvK9Fl71fElCi"><span class="d" data-page-node-id="RIq0WRhriBFRE0z1WsdFWJ">21</span></td><td data-page-node-id="cvZxBHN10rjsolrBJESALF"><span class="d" data-page-node-id="kUlF2uCoFvevnVomSDYarC">22</span></td><td data-page-node-id="5ZXv8fLfgOtq2aCVS5Qq9j"><span class="d" data-page-node-id="DsFVN0eqBjX7aMyTKqHl6x">23</span></td><td data-page-node-id="ozqWI43Gt6dDJvNX7fvhhj"><span class="d" data-page-node-id="kWDzIFXdh5Cxb1uHcyWliD">24</span></td></tr>
+        <tr data-page-node-id="GWwYjHMMmHZpD6wRO2gBMf"><td class="rest" data-page-node-id="gHbdUn1oy7E7lAfjtvkFxX"><span class="d" data-page-node-id="3WmEroojl2PGpAPsvxo46c">25</span></td><td data-page-node-id="jb96TARTeU5MHXGXZxKHz1"><span class="d" data-page-node-id="wqUi6zMSzUHWDlGgUNrluQ">26</span></td><td class="ev" data-page-node-id="TmZxe05waSrO17UrVO6n2O"><span class="d" data-page-node-id="BmMein4h1ysycwbgeyUoST">27</span><span class="tag" data-page-node-id="pxMQT0BX6nj0RJczHzlux1">提醒日</span></td><td data-page-node-id="4bJ7jvLM6sjAnlhKUOTPe1"><span class="d" data-page-node-id="5bbUKxmIPjCzWxt2BU8OSh">28</span></td><td data-page-node-id="bWdoyrEUA92RQ9N5g1ghhW"><span class="d" data-page-node-id="q5YN2rFM2NPpthKfsS6zhv">29</span></td><td data-page-node-id="5OJE6FPXCUEl378zrgCloI"><span class="d" data-page-node-id="KJLkzauf8K31XRGlVBiGJc">30</span></td><td data-page-node-id="PQ0fKkE3oLg8LltO99BKwd"><span class="d" data-page-node-id="FOpUF5FrxkX2Re1Fg4JLpw">31</span></td></tr>
+      </table>
+    </div>
+
+    <div class="month" data-page-node-id="9wttwH00jRMxkplO0DcSrm">
+      <h3 data-page-node-id="CZqDh1FuKNYADn6RHhcsWo">2026 · 11 月</h3>
+      <div class="mtag" data-page-node-id="CC1zKVpmHmd59MPYZdRFyd">11/1 M12 工作坊（周日，主力窗口末）→ 11/2–8 强化收官 → 红区(假设 11/16 起 Master 期末)让路，只保热感</div>
+      <table class="cal" data-page-node-id="tzVI0HgHBFAWXDcgosjALg">
+        <tr data-page-node-id="DEbI4zmLNVOOfJYwIwz0nT"><th data-page-node-id="SP3MGdS3yiuzFFkXIXjf7g">日</th><th data-page-node-id="mQ5gUhfU5uZ1og2UWBlQ05">一</th><th data-page-node-id="wmTOO1hIW6LfqIhqMOun0i">二</th><th data-page-node-id="r6TTvB8u71Dhs3M8FKJmEU">三</th><th data-page-node-id="tS26Ratz0lBF1UmFLvGMzv">四</th><th data-page-node-id="wz9aiT8FPO4uNNcIaPw0N8">五</th><th data-page-node-id="5XRRGFb6SbefIraA2pTj6H">六</th></tr>
+        <tr data-page-node-id="EsFCpJLZyoxU5bLyj0a1WB"><td class="ws" data-page-node-id="QtjK7ri3ldL5vcx6HSLTUI"><span class="d" data-page-node-id="6JBic2Qn9Cy6kir0MXG49O">1</span><span class="tag" data-page-node-id="eTcFkvPWTykdfKIdO9FjwD">M12 工作坊</span></td><td data-page-node-id="JqkfxEzrDWQZcT3MqAASEN"><span class="d" data-page-node-id="TmDPVeZEerNiph8dOJJewI">2</span></td><td data-page-node-id="vWLTtFN5qj5k65ndQFILtB"><span class="d" data-page-node-id="lZTejjwS1BvIEeeP8X5mUb">3</span></td><td data-page-node-id="uQIp6e1qyMtKeKSugdQRXo"><span class="d" data-page-node-id="e8QPAfZf0UTD4XAe37zqP7">4</span></td><td data-page-node-id="yAe3CPspHgN49pKcxpRR2d"><span class="d" data-page-node-id="2YcyuOiYxRvmiygPZLqux7">5</span></td><td data-page-node-id="JkpjOXinlFYHex654aCWjg"><span class="d" data-page-node-id="5jMRn40fprNAh2mVOT4xHQ">6</span></td><td data-page-node-id="fHBRe2V0IMcHBgEkaXClsm"><span class="d" data-page-node-id="DyxHEeFmpg1NVYxEOjb5uw">7</span></td></tr>
+        <tr data-page-node-id="llL5ctnHAJokWQbADGwWzT"><td class="rest" data-page-node-id="2abVLT8cOumuSjzW452YJM"><span class="d" data-page-node-id="zQjuhtUlVK3R5HU6RhI6YW">8</span></td><td data-page-node-id="kyb16i1Q8phpA49ifRxt0I"><span class="d" data-page-node-id="K9aNgyImsiJDg2awXm378J">9</span></td><td data-page-node-id="fZRXKEUDLktWl4xVGhEkoB"><span class="d" data-page-node-id="qP1KBJ9la8bF5KiZf5rNg2">10</span></td><td data-page-node-id="dT4qPuDdprJkERHek8R1yb"><span class="d" data-page-node-id="WjugQBdCBo7fiqZtnsoPmh">11</span></td><td data-page-node-id="6bF4luWmfArSezvKpbsjHY"><span class="d" data-page-node-id="menQTCT8hHm0bQJpTJN6mu">12</span></td><td data-page-node-id="Qe5pDh9qbClk3VWomXPaE3"><span class="d" data-page-node-id="JIndSZg2Qm8pSlxkMi3vNL">13</span></td><td data-page-node-id="MgO9C9XmTIFJ4PJTZ2W1wm"><span class="d" data-page-node-id="zjABnYBCpygpV1o4zkKQvA">14</span></td></tr>
+        <tr data-page-node-id="xii9abHJNYFJAofDD9GLfe"><td class="rest" data-page-node-id="bJrh3gqKSfpkFsQrHzlWgk"><span class="d" data-page-node-id="XlSaEwfUrI1g15CA9SnLgA">15</span></td><td class="ev" data-page-node-id="ffarrMKQ2pEOiLRPik8pdi"><span class="d" data-page-node-id="2oSTqwkFm4yBByFoUrz5Yj">16</span><span class="tag" data-page-node-id="WtPdXh97r6Q2PU2flWupbW">红区开始(假设)</span></td><td data-page-node-id="eWOs55FKXJPICgErecCYxw"><span class="d" data-page-node-id="IkFLcXkIzjQIZZtoeHTxAl">17</span></td><td data-page-node-id="3JNPTqgKOmQ2b5jnPoyxc9"><span class="d" data-page-node-id="75FjJ2HC67RyI6wgAIsTzK">18</span></td><td data-page-node-id="sSCqfbB12bKF4uDt7eBGOH"><span class="d" data-page-node-id="CLUZfwQWWZ5pvGaX5uPQBz">19</span></td><td data-page-node-id="YzymtxwNCvpyL7QEBiWjtg"><span class="d" data-page-node-id="PDo6u7wDmclVadlvU9emi6">20</span></td><td data-page-node-id="WG0Xld7B97a3EAdutLhaRB"><span class="d" data-page-node-id="4z64VLDNTzz0Bz7UiX0CFY">21</span></td></tr>
+        <tr data-page-node-id="Z6xSez1i2gue3IqvWMlpEC"><td class="rest" data-page-node-id="BxV2d96yUGg0AJyuIAlFhi"><span class="d" data-page-node-id="RvuqK7rMBXzB3mOyVsLs6L">22</span></td><td data-page-node-id="iRKCc88lKO75ZHGeSNraqj"><span class="d" data-page-node-id="VTLlES5qhIyCQk1fvS0Zfe">23</span></td><td data-page-node-id="7FqnqYmMeW4cGphXEc0VQu"><span class="d" data-page-node-id="iqNAsGK8R4GxeQf9Z1J2HC">24</span></td><td data-page-node-id="hFiDbAGJ8cHP2XLA3nKPjN"><span class="d" data-page-node-id="rufKZhUTyGXOXhSE5f1s4S">25</span></td><td data-page-node-id="aY6mrC2Dpm2JXbDNRxqumm"><span class="d" data-page-node-id="ZcTRWI1B7ihEYnI5M5edVF">26</span></td><td data-page-node-id="hVYqeh4JK1FEyC2EmvHJwW"><span class="d" data-page-node-id="yvdybRhresb4dtrTdWyUJc">27</span></td><td data-page-node-id="juBJLgoMvULLg895t4EgFA"><span class="d" data-page-node-id="xdH2bPDOvEeVkMlRxRefSX">28</span></td></tr>
+        <tr data-page-node-id="GmRrmVIsxWA3wdjTOnwJXq"><td class="rest" data-page-node-id="ggOaQnlkSYXBLa2JT4ztQa"><span class="d" data-page-node-id="xOM0y1J43ttrsYnXsdstoG">29</span></td><td data-page-node-id="EixOpJFN8yS5V52jNBBXjq"><span class="d" data-page-node-id="o5NJQsPeb2HDH8HE2ByiCX">30</span></td><td class="blank" data-page-node-id="1fdCkeXclb0SWkjiseXSY9"></td><td class="blank" data-page-node-id="MVDc1nF2ibRzlXY6ukbfFa"></td><td class="blank" data-page-node-id="PBlq5egg8XZNdyovuoCtKE"></td><td class="blank" data-page-node-id="j7c6Dzw36EjPYgoWgrmgo2"></td><td class="blank" data-page-node-id="F7G0SdaxoXz735REJPZChw"></td></tr>
+      </table>
+    </div>
+
+    <div class="month" data-page-node-id="gMs6ULSWXnEo0iZjzKWgvX">
+      <h3 data-page-node-id="QCy321truk8Z29mDoMAJ8q">2026 · 12 月</h3>
+      <div class="mtag" data-page-node-id="p8smlCOiqMogCt6LD4D5Yv">红区收尾(–12/6) → 冲刺：回温(12/7起) → 真题 → 12/21 后只看错题 → 考试</div>
+      <table class="cal" data-page-node-id="PBNzbfXn76w2JAOJkwM7Fp">
+        <tr data-page-node-id="vv1qM3CTV1YtcbzcpW60bU"><th data-page-node-id="5GHQykME6oOH4b0ee4FN5k">日</th><th data-page-node-id="jHlRZwEKlSm19CAP9MNh6H">一</th><th data-page-node-id="FkmJSZjtggJ5VCtu4bjBmc">二</th><th data-page-node-id="MctWzAI1wNQEPCQxUD561l">三</th><th data-page-node-id="dT23NIWxfZ6d8A3dudKXH6">四</th><th data-page-node-id="32qIHqnv7GGYMYO7Hrf5Rb">五</th><th data-page-node-id="Bj6giuZlZoAvt907Npnpvy">六</th></tr>
+        <tr data-page-node-id="OqrqXg9R44ana3085lP8ml"><td class="blank" data-page-node-id="HM5MwaSRe6AUqRrz9QvdHb"></td><td class="blank" data-page-node-id="Q2zxnvRLYwDCRGrTlCcAxN"></td><td data-page-node-id="fcwwrHCakhk6030yk019cM"><span class="d" data-page-node-id="EGw13zjEDGrHN36bBaPJBb">1</span></td><td data-page-node-id="ypzS4J0dHldayUc1yEEcF7"><span class="d" data-page-node-id="4iD72lxy4f2wIduwuPMREX">2</span></td><td data-page-node-id="iFGfmkqyMatPhORXDuOsqm"><span class="d" data-page-node-id="s18Lf8RQuQv0Rm0rK3EDkT">3</span></td><td data-page-node-id="K3kt7fDJVRWk65tEqNPKUH"><span class="d" data-page-node-id="NnnJxRY8o7XjGZ6bkJW1nr">4</span></td><td data-page-node-id="vo6WG0v0ltDNUmp7eFAKue"><span class="d" data-page-node-id="EWmuSJgayO3Zl0kIP50xvt">5</span></td></tr>
+        <tr data-page-node-id="YFjixcyUcj7sX2ivRAhWtg"><td class="rest" data-page-node-id="Zagoy9JWATQ29wDFA2teqR"><span class="d" data-page-node-id="btdSjrQjcDWMo1zypmPCD9">6</span></td><td data-page-node-id="1JkDy17XH99f9D99S8EqYU"><span class="d" data-page-node-id="zjuJPAiu8SxVjK6jvAXtSZ">7</span></td><td data-page-node-id="V1rL149bUkb1DIGztiITF2"><span class="d" data-page-node-id="eoScuQN5xvPRr2E80lbcGT">8</span></td><td data-page-node-id="0fW3rSU5geK8ddjxbUuuj9"><span class="d" data-page-node-id="A8SNJMzDwkEQ6u8bkcgMAN">9</span></td><td data-page-node-id="MK7EKAur2EHq15ADHLpVdQ"><span class="d" data-page-node-id="awDEWEIHmjZ648tdIPFkbx">10</span></td><td data-page-node-id="HAp0DE8FqYXes3W1ysdl8h"><span class="d" data-page-node-id="wfde0tAPm2qmmVfigCnzWS">11</span></td><td data-page-node-id="gtE4uCqXvCJlg5QfY3rohm"><span class="d" data-page-node-id="cC4lvXhFT2mk3d03OC2o2L">12</span></td></tr>
+        <tr data-page-node-id="UzDmW1CNDXYWLbSQHcRDAt"><td class="rest" data-page-node-id="PWo9WVLSGt6a1MKihVNwZt"><span class="d" data-page-node-id="1cSrtluBjQkRQ2DmPfCFVz">13</span></td><td data-page-node-id="5CG2TKEYGEoCmOS1teAk6e"><span class="d" data-page-node-id="xdK6NtOwRBdFMwlYLELXmV">14</span></td><td data-page-node-id="1wKtgUvcSxTU3hxX3dtra3"><span class="d" data-page-node-id="Fb248DHKTPAhNCxpoOjGoJ">15</span></td><td data-page-node-id="QRBGwRr1464FG1DdhmypL4"><span class="d" data-page-node-id="z4iuLmxZyQbrZ81hJLtGvZ">16</span></td><td data-page-node-id="azeUVyav1h2iAmHMbAupcZ"><span class="d" data-page-node-id="tEAjWXKbdX3f47QgGvqCqq">17</span></td><td data-page-node-id="k8VyEQIdXpWmvK0Zq7DVZ2"><span class="d" data-page-node-id="IX6sq8ThV67ZHETtDTFGhx">18</span></td><td data-page-node-id="dTmFREllIZgI0GqK7lCJYD"><span class="d" data-page-node-id="N8AmSstV1nLU8iBtQ91R0q">19</span></td></tr>
+        <tr data-page-node-id="AbsqbbdP0NDopYcfkeFyXD"><td class="rest" data-page-node-id="aPhEWRBXEvIgX0GrcjA1LB"><span class="d" data-page-node-id="a9VNsUWc7iE0vNk7t1Xo5q">20</span></td><td data-page-node-id="wFxYa6IuzDmnBW9OWlKVJw"><span class="d" data-page-node-id="l7UAnAD6OrdmW9uJc1Q2AZ">21</span></td><td data-page-node-id="Mfa1Cs28glndUnaxswr5SU"><span class="d" data-page-node-id="ypnGgCfcWSyDYorsUxHMc8">22</span></td><td data-page-node-id="bPe5dL043SDdLc6lXgrODu"><span class="d" data-page-node-id="r0SB29kVUoxfBwTPtN7gvY">23</span></td><td data-page-node-id="aktfOSKsK8wseqB7ehSQCe"><span class="d" data-page-node-id="W1VczDafM3Y9vPTAAsw9qy">24</span></td><td class="hol" data-page-node-id="YaDJ9l9u8WkSA7AhBfX8LF"><span class="d" data-page-node-id="Ogd0pRT0P3oKuLpZ0maZYN">25</span><span class="tag" data-page-node-id="tV8hEWZH633rdsfDBUtelb">圣诞(公众假)</span></td><td class="hol" data-page-node-id="xVRAygz1fnb2nbmHHASr9E"><span class="d" data-page-node-id="QTktZ5CNTk7JvQ917voeIn">26</span><span class="tag">圣诞翌日</span></td></tr>
+        <tr data-page-node-id="0B3iO0tX2Sm70tQorHhttm"><td class="exam" data-page-node-id="S1JrGJifvy5zj8w78c8NX4"><span class="d" data-page-node-id="AuRK8FipwcJyKsoc3EvAIM">27</span><span class="tag" data-page-node-id="epQ4s8kApe0VlqekgHwdYS">M13 考试</span></td><td class="exam" data-page-node-id="6zHQ60h5CfqQzreHBgjDrC"><span class="d" data-page-node-id="RwlvccKo17siJep6hJzN01">28</span><span class="tag" data-page-node-id="naRBKQt7XiVaRuJptXkQLz">M12 考试</span></td><td data-page-node-id="3GV3Tv1HDTWUbJwxOD86Uu"><span class="d" data-page-node-id="zCKgyFc6aOoADmUQTvvPN5">29</span></td><td data-page-node-id="UcKzsE6DzmcXsVEzBteU87"><span class="d" data-page-node-id="xzkb75TbHWgbDfGn0jP9eY">30</span></td><td data-page-node-id="IKcHjVzbjn3EcdO92lCaO3"><span class="d" data-page-node-id="aZmmJVoQj2w7jCViWNV2tM">31</span></td><td class="blank" data-page-node-id="GCci2lKri1RoNcfNWi20Pk"></td><td class="blank" data-page-node-id="UjwLKB5dwS1h5pj59fye9s"></td></tr>
+      </table>
+    </div>
+  </div>
+
+  <h2 data-page-node-id="rOlSRx1v6Ldkw9gKB7p8tw">固定结构（每周重复，不占动态表）</h2>
+  <div class="fixed" data-page-node-id="QEZjcRz9BcfkZybYT09YFA">
+    <b data-page-node-id="QA1AfOc4Fb8jNElDEnjYnK">Master 上课：</b>周三 15:00–18:00 · 周四 15:00–18:00 · 周五 19:00–22:00 · 周六 两节全天（IS5312 常规 15:00–18:00，早课时段待确认；9/26、10/3 的 IS5312 改线上）
+    &nbsp;&nbsp;<span class="hl" data-page-node-id="acoNFAPMGLFExtaHMAUK8y">Day-off：周日 / 一 / 二</span><br data-page-node-id="MKIH7JC6AaXtGPgqxVCvhk">
+    <b data-page-node-id="w84XFLgaa5n7gsHBBCWIlf">HKICPA 每周节奏：</b>周一 5–6h · 周二 6–7h · 周三/四保温各 1.5–2h · 周五白天 5–6h · 周六晚 0.5–1h · 周日休息
+    &nbsp;|&nbsp; 作业缓冲：周六 16:00–20:00 第一作业块 + 周三/四上午备征用
+  </div>
+
+  <h2 data-page-node-id="IuQaqk0MXZG4WeehtR63Tt">动态事项表（作业 / 小组 / 学校考试 / 课程调整）</h2>
+  <div class="note" data-page-node-id="0b8u5rHWY8NfevQexYocbJ">每次同步后由小爪更新此表。类型：<span class="pill cls" data-page-node-id="BBvT8KMvuJE1M8fsewYBMg">课程安排</span> <span class="pill hw" data-page-node-id="RP9SgeUSUEC0BparSL0ysi">课程作业</span> <span class="pill grp" data-page-node-id="xNiZthQ9WrNNMVl4LPH46C">小组任务</span> <span class="pill exam" data-page-node-id="LweksDlHiMbkOzn9i0Bp9S">学校考试</span> <span class="pill todo" data-page-node-id="h3oIWwbAEfgIKOR30AqR9l">待办/确认</span></div>
+  <table class="dyn" data-page-node-id="bRYzcV8l6VoHIEadCMlWv4">
+    <tr data-page-node-id="kJj3lTiVRBg8MKCgl54NTa"><th style="width:110px;" data-page-node-id="BvWvIGcYV93OVyBgBawFSK">日期</th><th style="width:42%;" data-page-node-id="lxCB4uSF23Sk4F7NyOwuFD">事项</th><th style="width:90px;" data-page-node-id="qbXXa5PWFbudNK0c10wsli">类型</th><th data-page-node-id="qYF1qOVlH9ebUcKzhiwtBs">状态 / 备注</th></tr>
+    <tr class="ok-row" data-page-node-id="ZEiZEOdqGFDDhX8A7A0Cra"><td data-page-node-id="s841a7FrApgQyAu4gUFDed">11/1(日)</td><td data-page-node-id="hR3vbY0FDDK2vHiUpR3KIC">M12 · Workshop（Business Finance）</td><td data-page-node-id="6KaGFApvKltsxSDunyIHeD"><span class="pill cls" data-page-node-id="Ynj0LoLTW1e8ETqdDRttiO">课程安排</span></td><td data-page-node-id="OV5jxxxwoRaODDlPkECpWk">✅ 已确认 · M13 免工作坊 · 前 5 天（10/27）自动提醒准备清单</td></tr>
+    <tr data-page-node-id="XwJ29SCGr1fVesHnK4X7pw"><td data-page-node-id="fRRk0VBsNknFCGXEQB8IgH">9/19(六)</td><td data-page-node-id="Tk9fXl9BWBBHB3oGLUo8vt">IS5940 · Group Project Part 1：Proposed Topic</td><td data-page-node-id="H7c7Cf7gB98jVEXueQjezs"><span class="pill grp" data-page-node-id="HFAmEkcvXeAASbIO8nkGrE">小组任务</span></td><td data-page-node-id="CMIGjiG3cKYuDgyO9VUoFf">W3 截止 · 距今 11 天 · 会占用 9/15–19 的作业缓冲（周六作业块优先）</td></tr>
+    <tr data-page-node-id="noMBmrmFk0Y5IOW51DQTc1"><td data-page-node-id="ov1d5L8EJs5PO0NTF29aPv">9/19(六)</td><td data-page-node-id="cZyAhyA1T9idipualqmG0o">IS5940 · Individual Assignment Part 1：Company Selection</td><td data-page-node-id="NQnhENb01iUoHnhTgxeRoc"><span class="pill hw" data-page-node-id="itMLHQe320RGPsqfAvpjLr">课程作业</span></td><td data-page-node-id="WjblMFTvfNJqVmheWzRiSC">W3 截止 · 与小组 Part 1 同天，建议分两天推进，别堆到 9/18 晚</td></tr>
+    <tr data-page-node-id="dcSe6OixMYfyW0Jp5hcAoi"><td data-page-node-id="REjB1TAPoq7yxTGfeXgZCJ">9/26(六)</td><td data-page-node-id="H1HZQlCdUDEQjRpulukWbq">IS5312 15:00–18:00 → 改线上</td><td data-page-node-id="pqLuwq5FQcidclvtucXrPI"><span class="pill cls" data-page-node-id="Z9Ea2mIAIdGUBySHqOsDFh">课程调整</span></td><td data-page-node-id="IQM1b58tuQzBiaOEZ4Wsvb">省通勤 · 线上课仍算上课，不并入 HKICPA</td></tr>
+    <tr data-page-node-id="fCmSB3duafZJP9prc3I4WS"><td data-page-node-id="vvLEqDhwFJMJXrorTcLGNC">10/3(六)</td><td data-page-node-id="h0L9drFdUB3LXdGiE242Fb">IS5312 15:00–18:00 → 改线上</td><td data-page-node-id="fEaSVQtQFRByMfKKy6yDOj"><span class="pill cls" data-page-node-id="rlYV6STRXmhCKjNzs7sHy6">课程调整</span></td><td data-page-node-id="CsSRuxEKxNaDAlrIarUFY7">国庆假期周，前后空档可灵活安排 M13/M12</td></tr>
+    <tr data-page-node-id="D7oCOQTB8zhlB6tdzFA3pe"><td data-page-node-id="nDPLwwPrbvV4ZibCkdzAmQ">10/5–11(W6)</td><td data-page-node-id="CANRC3BaQw3QTn7jsHQ3gV">IS5940 · Group Project Part 2：Interim Report</td><td data-page-node-id="8OgebfzqiP4jDCi5vVVb6z"><span class="pill grp" data-page-node-id="TDh10iD4ymCmp5tjgOHJhY">小组任务</span></td><td data-page-node-id="7VbyqHAXnjxQq50OauINly">具体日期未定 · 落在主力窗口第 1 周，用周六 16:00–20:00 作业块消化</td></tr>
+    <tr data-page-node-id="lOCBVqnLwZkoczahtVAQLe"><td data-page-node-id="61n38k35wSBLzXXknHTEfH">11/9–15(W11)</td><td data-page-node-id="5n6rsXOZF3kfILJNjzhLh7">IS5940 · Group Project Final Report</td><td data-page-node-id="fDJmdZGKoFdAnyB5SvaUIP"><span class="pill grp" data-page-node-id="zy70jlafavCKjUgrRBovmO">小组任务</span></td><td data-page-node-id="wAc0AMXVSKHJ4YPeqsE94i">⚠️ 撞红区开始 · 具体日期确认后需评估冲刺窗口挤压，可能要用周日应急区</td></tr>
+    <tr data-page-node-id="XPt18KFXTqUfE9wn828W7C"><td data-page-node-id="WJYxbWE3UZBlx5gLx8yRRV">待确认</td><td data-page-node-id="4xKkcDMDRXIdCQFGPghgIo">Master 期末确切日期（红区 11/16–12/6 为假设）</td><td data-page-node-id="Zu4igTAw6pTPEhUSdnNnMH"><span class="pill exam" data-page-node-id="dGdu7gYzcu57qkdmTDIIbB">学校考试</span></td><td data-page-node-id="bBGkldIve7DMZW1zr1Dsu9">⏳ 拿到考试时间表后校准冲刺段</td></tr>
+    <tr data-page-node-id="tFxX1K4ZQ1rfdvVbNQB4G9"><td data-page-node-id="oMsz9lUIefNmcqAYDffBVv">待确认</td><td data-page-node-id="17OQbrj1IwfdfI9CFJbHQ8">KAPLAN 录播清单盘点：节数 / 时长 / revision / mock + 对照 2026 syllabus 查版本差异</td><td data-page-node-id="C4pDLzv1MTsvdyJqH9YGfu"><span class="pill todo" data-page-node-id="sW4AmDuNGApwZ7B2Urae3L">待办/确认</span></td><td data-page-node-id="fu32jC2XkvMB3AFeNoqoVb">⏳ 盘点后把 M13 各讲映射到补漏清单</td></tr>
+    <!-- 新事项从这里往下追加 -->
+  </table>
+
+  <div class="foot" data-page-node-id="g0nrXidLcp0uJmJNxZSvCZ">小爪维护 · 最后更新 2026-09-08（2nd） · 与 <b data-page-node-id="prj3ybxpiGcRPPIkedbUJD">HKICPA_M13_M12_备考作战表_2026Q4.html</b>（策略）、<b data-page-node-id="uVNQFUj932lpGliJ6TK6K4">M13_补漏清单_202606真题扫描.md</b>（补漏）、<b data-page-node-id="Yd6zjzzbxYHVj5anzswA8l">HKICPA_备考进度追踪.md</b>（打卡）配套使用</div>
+</div>
+</body>
+</html>
