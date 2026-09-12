@@ -38,6 +38,24 @@
   .status { display:inline-block; width:8px; height:8px; border-radius:50%; background:#5ec9a0; margin-right:6px; }
   .foot { margin-top:24px; text-align:center; font-size:11.5px; color:#6b7a86; }
   .pill { display:inline-block; font-size:11px; padding:1px 8px; border-radius:999px; background:#1d3a30; color:#9fe1cb; }
+  .cl-wrap { background:#171f26; border:1px solid #26313b; border-radius:14px; padding:14px 14px 10px; margin-bottom:10px; }
+  .cl-head { display:flex; justify-content:space-between; align-items:center; font-size:12px; color:#9fb0bd; margin-bottom:9px; gap:8px; }
+  .cl-head .cl-date { font-size:12.5px; color:#e8eef2; font-weight:600; }
+  .cl-tag { background:#1d3a30; color:#9fe1cb; padding:2px 9px; border-radius:999px; font-size:11px; white-space:nowrap; }
+  .cl-bar-wrap { height:6px; background:#0f141a; border-radius:99px; overflow:hidden; margin-bottom:4px; }
+  .cl-bar { height:100%; width:0; background:linear-gradient(90deg,#3f8f76,#5ec9a0); border-radius:99px; transition:width .35s ease; }
+  .cl-meta { font-size:11.5px; color:#8b9aa6; margin-bottom:8px; }
+  .cl-item { display:flex; align-items:flex-start; gap:10px; padding:10px 4px; border-bottom:1px solid #212b33; cursor:pointer; user-select:none; }
+  .cl-item:last-of-type { border-bottom:none; }
+  .cl-box { flex:0 0 18px; width:18px; height:18px; border:2px solid #3f8f76; border-radius:5px; margin-top:2px; position:relative; transition:all .18s; }
+  .cl-item.done .cl-box { background:#3f8f76; }
+  .cl-item.done .cl-box::after { content:'\2713'; position:absolute; left:2px; top:-5px; color:#0f141a; font-size:13px; font-weight:800; }
+  .cl-text { font-size:13.5px; color:#e8eef2; line-height:1.5; }
+  .cl-item.done .cl-text { color:#66757f; text-decoration:line-through; }
+  .cl-opt { font-size:11px; color:#8b9aa6; display:block; margin-top:2px; }
+  .cl-focus { margin-top:12px; padding:10px 12px; background:#141b21; border-left:3px solid #d0a84a; border-radius:6px; font-size:12.5px; color:#c6d2da; line-height:1.7; }
+  .cl-focus b { color:#ffd9a0; }
+  .cl-pre { margin-top:10px; padding:9px 12px; background:#1a2430; border-left:3px solid #4a8fd0; border-radius:6px; font-size:12px; color:#b9d4f0; }
 </style>
 </head>
 <body>
@@ -48,6 +66,19 @@
   <div class="cards">
     <div class="count" id="cd1"><div class="n">–</div><div class="l">M13 业务鉴证</div><div class="t">12/27(日) 考试</div></div>
     <div class="count exam2" id="cd2"><div class="n">–</div><div class="l">M12 商业财务</div><div class="t">12/28(一) 考试</div></div>
+  </div>
+
+  <h2>📋 今日任务 <span style="float:right; font-size:11px; color:#5d6c78; font-weight:400;">点一下划线</span></h2>
+  <div class="cl-wrap">
+    <div class="cl-head">
+      <span class="cl-date" id="clDate">加载中…</span>
+      <span class="cl-tag" id="clTag">—</span>
+    </div>
+    <div class="cl-bar-wrap"><div class="cl-bar" id="clBar"></div></div>
+    <div class="cl-meta" id="clMeta">0 / 0 完成</div>
+    <div id="clList"></div>
+    <div class="cl-pre" id="clPre" style="display:none;"></div>
+    <div class="cl-focus" id="clFocus"></div>
   </div>
 
   <h2>📂 查看</h2>
@@ -83,6 +114,115 @@
   const d1 = daysTo('2026-12-27'), d2 = daysTo('2026-12-28');
   document.getElementById('cd1').querySelector('.n').textContent = d1>0 ? d1+' 天' : (d1===0?'今天':'已过');
   document.getElementById('cd2').querySelector('.n').textContent = d2>0 ? d2+' 天' : (d2===0?'明天':'已过');
+  /* ===== 今日任务 checklist ===== */
+  var CL_TPL = {
+    0: { label:'周日 · 休息 + 自检', items:[
+      { t:'完全休息，不碰教材', s:'恢复精力也是计划的一部分' },
+      { t:'20:00 周自检打卡', s:'本周小时数 / M12 到第几讲 / M13 到第几节 / 真题几套' }
+    ]},
+    1: { label:'周一 · Day-off 主力', items:[
+      { t:'M12 视频 2 节（1.25× 倍速）' },
+      { t:'当天例题合上答案重做一遍', s:'KAPLAN 例题即考题母题' },
+      { t:'M13 错题卡回顾 15 分钟' }
+    ]},
+    2: { label:'周二 · 整块日', items:[
+      { t:'限时手写真题 2 小时', s:'输出主战场——别只看不写' },
+      { t:'M13 精看 1 节（红题章节）' },
+      { t:'复盘：把答不出的点记进错题本' }
+    ]},
+    3: { label:'周三 · 上课日', items:[
+      { t:'M12 视频 1 节（1.25×）' },
+      { t:'例题重做' }
+    ]},
+    4: { label:'周四 · 上课日', items:[
+      { t:'M13 视频 1 节（红题章节精看）' },
+      { t:'整理该节框架笔记' }
+    ]},
+    5: { label:'周五 · 白天块', items:[
+      { t:'M12 视频 3 节（1.25×）' },
+      { t:'例题重做 + 当天错题标记' }
+    ]},
+    6: { label:'周六 · 课后（作业优先）', items:[
+      { t:'Master 作业块优先（16:00–20:00）' },
+      { t:'若无作业 → M13 真题 2h' }
+    ]}
+  };
+  var CL_FOCUS = {
+    title:'本周焦点（9/14–9/20）',
+    items:[
+      'M13：Q9 持续经营 —— 讲义 + 自测 12 问 + 手写框架卡',
+      'M12：Video 01–07（Ch1 全章 + Ch2 起步）',
+      '⚠️ 9/19(六) IS5940 双截止：选题 + 选公司'
+    ]
+  };
+  var CL_START = '2026-09-14';
+
+  function clLocalDate(d){
+    return d.getFullYear() + '-' + String(d.getMonth()+1).padStart(2,'0') + '-' + String(d.getDate()).padStart(2,'0');
+  }
+  (function(){
+    var listEl = document.getElementById('clList');
+    if(!listEl) return;
+    var now = new Date();
+    var dstr = clLocalDate(now);
+    var tpl = CL_TPL[now.getDay()];
+    var lsKey = 'hkicpa-cl-' + dstr;
+    var state = {};
+    try { state = JSON.parse(localStorage.getItem(lsKey) || '{}') || {}; } catch(e){ state = {}; }
+
+    var WEEK = ['周日','周一','周二','周三','周四','周五','周六'];
+    document.getElementById('clDate').textContent = (now.getMonth()+1) + '月' + now.getDate() + '日 ' + WEEK[now.getDay()];
+    document.getElementById('clTag').textContent = tpl.label;
+
+    function render(){
+      listEl.innerHTML = '';
+      var done = 0;
+      tpl.items.forEach(function(it, i){
+        var el = document.createElement('div');
+        el.className = 'cl-item' + (state[i] ? ' done' : '');
+        var txt = document.createElement('div');
+        txt.className = 'cl-text';
+        txt.textContent = it.t;
+        if(it.s){
+          var sp = document.createElement('span');
+          sp.className = 'cl-opt';
+          sp.textContent = it.s;
+          txt.appendChild(sp);
+        }
+        var bx = document.createElement('div');
+        bx.className = 'cl-box';
+        el.appendChild(bx); el.appendChild(txt);
+        el.addEventListener('click', function(){
+          state[i] = !state[i];
+          try { localStorage.setItem(lsKey, JSON.stringify(state)); } catch(e){}
+          render();
+        });
+        listEl.appendChild(el);
+        if(state[i]) done++;
+      });
+      var pct = tpl.items.length ? Math.round(done / tpl.items.length * 100) : 0;
+      document.getElementById('clBar').style.width = pct + '%';
+      document.getElementById('clMeta').textContent = done + ' / ' + tpl.items.length + ' 完成' + (done === tpl.items.length && done > 0 ? '  🎉 今天达标！' : '');
+    }
+    render();
+
+    var fo = document.getElementById('clFocus');
+    if(CL_FOCUS && fo){
+      fo.innerHTML = '<b>' + CL_FOCUS.title + '</b><br>' + CL_FOCUS.items.map(function(x){ return '· ' + x; }).join('<br>');
+    }
+
+    var pre = document.getElementById('clPre');
+    if(pre && dstr < CL_START){
+      var days = Math.ceil((new Date(CL_START + 'T00:00:00+08:00') - now) / 86400000);
+      pre.style.display = 'block';
+      pre.textContent = '距离正式启动还有 ' + (days > 0 ? days : 0) + ' 天（9/14 周一）——这两天先恢复状态，别急着开跑。';
+    }
+
+    setInterval(function(){
+      if(clLocalDate(new Date()) !== dstr) location.reload();
+    }, 60000);
+  })();
+
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('sw.js').catch(()=>{});
   }
