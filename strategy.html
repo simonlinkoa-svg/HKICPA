@@ -1,272 +1,188 @@
 <!DOCTYPE html>
-<html lang="zh-CN" data-page-node-id="2hGNN7IGf2zZQGXXdCpK6n">
-<head data-page-node-id="Hs5ZPHw20g4LzrhOA4Tq0R">
-<meta charset="UTF-8" data-page-node-id="uelbGujF311DsKlBi2ja0L">
-<meta name="viewport" content="width=device-width, initial-scale=1.0" data-page-node-id="vHuFjOwBRMUzxoQeXHJMTn">
-<title>HKICPA M13+M12 备考作战表 · 2026Q4（按实际课表定制版）</title>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HKICPA M13+M12 作战表 · 严格版（2026 Q4）</title>
 <style>
-  * { margin:0; padding:0; box-sizing:border-box; }
-  body {
-    background:#0f141a; color:#e8eef2;
-    font-family:"Segoe UI","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
-    line-height:1.6; padding:32px 20px 60px;
-  }
-  .wrap { max-width:980px; margin:0 auto; }
-  h1 { font-size:22px; font-weight:600; letter-spacing:.3px; }
-  .sub { color:#9fb0bd; font-size:13px; margin-top:4px; }
-  .badge { display:inline-block; background:#2a5c49; color:#9fe1cb; font-size:12px; padding:2px 10px; border-radius:999px; margin-left:8px; vertical-align:3px; }
-  .chips { display:flex; flex-wrap:wrap; gap:8px; margin:16px 0 4px; }
-  .chip { padding:6px 12px; border-radius:8px; font-size:12.5px; border:1px solid #2a3642; background:#171f26; }
-  .chip b { color:#fff; }
-  .chip .date { color:#7fd0b0; }
-  h2 { font-size:15px; margin:30px 0 10px; padding-left:10px; border-left:3px solid #3f8f76; font-weight:600; }
-  .card { background:#171f26; border:1px solid #26313b; border-radius:12px; padding:16px 18px; margin-bottom:12px; }
-  .grid2 { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
-  @media (max-width:720px){ .grid2{ grid-template-columns:1fr; } }
-  .urgent { border-left:3px solid #d08f3f; }
-  .step { display:flex; gap:12px; margin-bottom:10px; }
-  .step:last-child { margin-bottom:0; }
-  .num { flex:0 0 26px; height:26px; border-radius:50%; background:#2a5c49; color:#9fe1cb; display:flex; align-items:center; justify-content:center; font-size:13px; font-weight:600; }
-  .step b { color:#fff; }
-  .step .d { color:#9fb0bd; font-size:13px; }
-  .tl { display:grid; grid-template-columns:repeat(16,1fr); gap:4px; margin:10px 0 6px; }
-  .cell { border-radius:6px; padding:6px 4px; text-align:center; font-size:11px; min-height:58px; display:flex; flex-direction:column; justify-content:center; gap:2px; }
-  .cell .w { font-weight:600; font-size:11px; }
-  .cell .r { font-size:10px; opacity:.9; }
-  .cell .m { font-size:10px; opacity:.75; }
-  .c-prep { background:#1d3a30; color:#9fe1cb; border:1px solid #2f6b57; }
-  .c-main { background:#14432f; color:#bff0da; border:1px solid #1d6b4a; }
-  .c-red  { background:#4a1f1d; color:#f0b9b6; border:1px solid #7a3a35; }
-  .c-spr  { background:#1d2f4a; color:#b9d4f0; border:1px solid #335a7a; }
-  .c-exam { background:#3a2a12; color:#ffd9a0; border:1px solid #8a6a26; }
-  .legend { display:flex; flex-wrap:wrap; gap:14px; font-size:11.5px; color:#9fb0bd; margin:4px 0 2px; }
-  .lg { display:flex; align-items:center; gap:5px; }
-  .dot { width:10px; height:10px; border-radius:3px; display:inline-block; }
-  .ph { display:flex; gap:14px; margin-bottom:14px; padding-bottom:14px; border-bottom:1px dashed #26313b; }
-  .ph:last-child { margin-bottom:0; padding-bottom:0; border-bottom:none; }
-  .ph .tag { flex:0 0 140px; }
-  .ph .tag .name { font-weight:600; color:#fff; font-size:14px; }
-  .ph .tag .dates { font-size:12px; color:#7fd0b0; }
-  .ph .tag .hrs { font-size:12px; color:#d0b87f; }
-  .ph .body { font-size:13px; color:#c6d2da; }
-  .ph .body ul { padding-left:18px; }
-  .ph .body li { margin-bottom:5px; }
-  .ph .body b { color:#fff; }
-  .note { background:#1a2128; border:1px dashed #3a4a56; border-radius:8px; padding:8px 12px; font-size:12px; color:#9fb0bd; margin-top:6px; }
-  table { width:100%; border-collapse:collapse; font-size:13px; margin-top:6px; }
-  th, td { border:1px solid #2a3642; padding:7px 10px; text-align:left; }
-  th { background:#1d2630; font-weight:600; color:#d7e2ea; }
-  td { color:#c6d2da; }
-  td.tot { font-weight:600; color:#ffd9a0; }
-  .risk b { color:#fff; }
-  .foot { margin-top:26px; font-size:11.5px; color:#6b7a86; text-align:center; }
+  * { margin:0; padding:0; box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+  body { background:#0f141a; color:#e8eef2; font-family:"Segoe UI","PingFang SC","Microsoft YaHei",system-ui,sans-serif; line-height:1.65; padding:20px 16px 60px; max-width:820px; margin:0 auto; font-size:14px; }
+  h1 { font-size:21px; font-weight:700; }
+  .sub { color:#9fb0bd; font-size:12.5px; margin-top:4px; }
+  .badge { display:inline-block; background:#2a5c49; color:#9fe1cb; font-size:11.5px; padding:2px 10px; border-radius:999px; margin-top:8px; margin-right:6px; }
+  .badge.warn { background:#4a2a10; color:#ffd9a0; }
+  h2 { font-size:15px; margin:26px 0 10px; padding-left:10px; border-left:3px solid #3f8f76; font-weight:600; }
+  h3 { font-size:13.5px; margin:16px 0 6px; color:#9fe1cb; font-weight:600; }
+
+  .kpis { display:grid; grid-template-columns:repeat(4,1fr); gap:8px; margin-top:14px; }
+  .kpi { background:#171f26; border:1px solid #26313b; border-radius:12px; padding:11px 8px; text-align:center; }
+  .kpi .n { font-size:20px; font-weight:800; color:#ffd9a0; line-height:1.15; }
+  .kpi .l { font-size:10.5px; color:#9fb0bd; margin-top:3px; }
+
+  table { width:100%; border-collapse:collapse; background:#171f26; border-radius:10px; overflow:hidden; margin-top:8px; font-size:12.5px; }
+  th { background:#1d2830; color:#9fe1cb; font-weight:600; text-align:left; padding:8px 9px; font-size:12px; }
+  td { padding:8px 9px; border-top:1px solid #212b33; vertical-align:top; }
+  tr:nth-child(even) td { background:#141b21; }
+  td.day { color:#ffd9a0; font-weight:600; white-space:nowrap; }
+
+  .card { background:#171f26; border:1px solid #26313b; border-radius:12px; padding:13px 15px; margin-top:10px; }
+  .card h3 { margin-top:0; }
+  .card .meta { font-size:11.5px; color:#8b9aa6; margin-bottom:6px; }
+  .phase { border-left:3px solid #3f8f76; }
+  .phase.p2 { border-left-color:#4a8fd0; }
+  .phase.p3 { border-left-color:#d05a4a; }
+  .phase.p4 { border-left-color:#d0a84a; }
+  .tag { display:inline-block; font-size:11px; padding:1px 8px; border-radius:999px; background:#1d3a30; color:#9fe1cb; margin-right:5px; }
+  .tag.m12 { background:#1d2f4a; color:#b9d4f0; }
+  .tag.red { background:#4a1f1d; color:#f0b9b6; }
+  .tag.warn2 { background:#4a3a12; color:#ffd9a0; }
   .hl { color:#7fd0b0; font-weight:600; }
-  .schedule-day { background:#1d2630; border-radius:8px; padding:12px 14px; margin-bottom:10px; border-left:3px solid #3f8f76; }
-  .schedule-day h4 { color:#fff; font-size:14px; margin-bottom:6px; }
-  .schedule-day p { color:#c6d2da; font-size:13px; margin-bottom:4px; }
-  .schedule-day .tag-rest { display:inline-block; background:#3a2a12; color:#ffd9a0; font-size:11px; padding:1px 8px; border-radius:4px; margin-right:6px; }
-  .schedule-day .tag-class { display:inline-block; background:#4a1f1d; color:#f0b9b6; font-size:11px; padding:1px 8px; border-radius:4px; margin-right:6px; }
-  .schedule-day .tag-study { display:inline-block; background:#1d3a30; color:#9fe1cb; font-size:11px; padding:1px 8px; border-radius:4px; margin-right:6px; }
+  .foot { margin-top:28px; text-align:center; font-size:11px; color:#6b7a86; }
+  ul { padding-left:17px; }
+  li { margin:3px 0; }
+  .note { background:#141b21; border-left:3px solid #4a8fd0; padding:9px 12px; border-radius:6px; margin-top:8px; font-size:12.5px; color:#c6d2da; }
+
   @media (max-width:600px){
-    body { padding:18px 10px 48px; }
-    h1 { font-size:18px; }
-    .sub { font-size:12px; }
-    .badge { font-size:11px; }
-    h2 { font-size:14px; margin:20px 0 8px; }
-    .chips { gap:6px; } .chip { font-size:11.5px; padding:4px 8px; }
-    .card { padding:12px; }
-    .step { gap:10px; } .num { flex:0 0 24px; height:24px; font-size:12px; }
-    .step .d { font-size:12.5px; }
-    .tl { grid-template-columns:repeat(4,1fr); gap:4px; }
-    .cell { min-height:56px; padding:4px 2px; }
-    .cell .w { font-size:11.5px; }
-    .cell .r { font-size:9.5px; }
-    .cell .m { font-size:9.5px; }
-    .legend { font-size:11px; }
-    .ph { flex-direction:column; gap:6px; }
-    .ph .tag { flex:none; }
-    .ph .tag .name { font-size:15px; }
-    .ph .body { font-size:13px; }
+    body { padding:16px 12px 50px; font-size:13.5px; }
+    .kpis { grid-template-columns:repeat(2,1fr); }
+    h1 { font-size:19px; }
     table { font-size:12px; }
-    th, td { padding:6px; word-break:break-word; }
-    .card { overflow-x:auto; -webkit-overflow-scrolling:touch; }
-    .card table { min-width:560px; }
-    .note { font-size:11.5px; }
-    .foot { font-size:10.5px; }
+    th, td { padding:7px 7px; }
+    h2 { font-size:14.5px; margin-top:22px; }
+    .card { padding:11px 12px; }
+    ul { padding-left:15px; }
   }
 </style>
 </head>
-<body data-page-node-id="DRqMXGvianFlQ828IwPSk5">
-<div class="wrap" data-page-node-id="HYjTksVWp0V0eGJmrpdREL">
+<body>
 
-  <h1 data-page-node-id="6etTRZ5ACmmPRQdGMT7a4C">HKICPA M13 + M12 · 备考作战表<span class="badge" data-page-node-id="gPHl4rykZ5dNHgojmJAC06">按实际课表定制版</span></h1>
-  <div class="sub" data-page-node-id="7OunbN2kNlhrPVa2AhBZJw">2026-09-07 → 12-28 · 主窗口 18–20h/周 · 按「熬夜/不起早 + 周日一二 Day-off + 每周 1.5 天放松」定制 · 时间池 ≈190h</div>
-  <div class="chips" data-page-node-id="htCPFoibS7USpA2VKvHri1">
-    <div class="chip" data-page-node-id="tDiApknGfLTJuuzy4GU0zR"><b data-page-node-id="k27fGCC81Dav7o87GgeNms">M13 业务鉴证</b> · 二战 · <span class="date" data-page-node-id="y0DYTnxC0WuddzMkgGyFtk">12/27 考试</span></div>
-    <div class="chip" data-page-node-id="Y1YRdVEaJrkw0iwfhY2itM"><b data-page-node-id="ITcWyEFJpXO6A5ZL0u5JxZ">M12 商业财务</b> · 新科 · <span class="date" data-page-node-id="oBWqZNFkvB4tUBXKpMlite">12/28 考试</span></div>
-    <div class="chip" data-page-node-id="jLE1wxKfNsk06Mxir7vK6A"><b data-page-node-id="SCErc9GTYap16un2mwsQzJ">KAPLAN 网课</b> · 往年录播 · <span class="date" data-page-node-id="zeYcyqGXUESygZzg4EJgCl">自定步调</span></div>
-    <div class="chip" data-page-node-id="gAgJbSGPOQZwekAQGvICDa"><b data-page-node-id="hVGGhmMpxFAhWJCqzgtbDb">Master 课表</b> · <span class="date" data-page-node-id="6xUw5fskqKJLWCfifE2jJs">周三/四/五/六上课</span></div>
-    <div class="chip" data-page-node-id="PlMPEs3j9RB4p5EiVmhxre"><b data-page-node-id="hOviKQ4K3VrCI7VaTULvlh">Master 期末</b> · <span class="date" data-page-node-id="YIEpHPFNaWEEw1Owp1SlEc">11/16–12/6 红区</span></div>
+  <h1>HKICPA M13 + M12 作战表</h1>
+  <div class="sub">严格版 · 2026 Q4 · 启动日 2026-09-14（周一）· 小爪维护</div>
+  <div>
+    <span class="badge">两门都保</span>
+    <span class="badge">每周 ≥16h</span>
+    <span class="badge warn">倍速为硬前提</span>
   </div>
 
-  <h2 data-page-node-id="zOirXFPdXxapZCHfZAoFM6">待办清单（本周内）</h2>
-  <div class="card urgent" data-page-node-id="fNef6MQoVYgRxWt9rg9RQd">
-    <div class="step" data-page-node-id="g0qnyY47tXQZG7NszgPLO7"><div class="num" data-page-node-id="C4eyVV3aPhwmzAmOnaSqIb">1</div><div data-page-node-id="eTa8QLHchQHugOH79Q5V0k"><b data-page-node-id="Pxe5ureIIbqoLWquMhCa1K">报名 + 工作坊 ✓</b><div class="d" data-page-node-id="45RZuPpMNoRMiLoQFNHRWb">M12 + M13 已报考。<b data-page-node-id="4bTKMCnadrSaZ0AIpCQVSc">M12 工作坊已确认 = 11/1（周日）；M13 免工作坊</b>（6 月已参加，重考豁免）。原假设的 11/8 / 11/14 两场已取消。11/1 当天为主力窗口末周休息日，正常参加即可。</div></div></div>
-    <div class="step" data-page-node-id="ZhbNqxEuFMCvDCviDv6QrU"><div class="num" data-page-node-id="kbIEaT6GaDvNkJbtkpFhnQ">2</div><div data-page-node-id="RnQIrcrgoE8o8VelU41rdR"><b data-page-node-id="w5gRiNPYVN4slILCbP9qHM">盘点 KAPLAN 录播 + 核对考季差异</b><div class="d" data-page-node-id="Sc8BDnyXKBYh3i6HSULt66">列清两科视频清单（节数 / 总时长 / revision 与 mock）。往年课务必对照 2026 年 12 月考季 syllabus：可持续披露、数据分析等新主题及准则更新，往年视频可能没覆盖——缺口用官方大纲 / 补充资料补上。</div></div></div>
-    <div class="step" data-page-node-id="Ebx3a0JSfEPvcDuGHoWLdi"><div class="num" data-page-node-id="nnndAAs1qhrF4N7xu5X2Is">3</div><div data-page-node-id="Nl5RGpQYJH3T75GJybb4s7"><b data-page-node-id="MyuGSPdfkbwLBdXlaSpLAu">定死「放松 1.5 天」的默认拆分</b><div class="d" data-page-node-id="Oaj7JO1mVLL1ZBXZHeIkPk">建议：周日全天 + 周一上午（睡懒觉 + 运动 / 社交）。剩下的周一中午到周二晚上归 HKICPA，周三到周六靠晚间/白天碎片学习。有社交冲突时，从机动时间里拆，不碰周一/二整块学习日。</div></div></div>
-    <div class="step" data-page-node-id="HTJ4jCZwZXmi34QarFXplv"><div class="num" data-page-node-id="DF2EFuGQFHxvybFKAin2CZ">4</div><div data-page-node-id="6yiYI461yQJ4ZGy4N8yLup"><b data-page-node-id="ud6NQBABM3vLtGFykfI6K7">翻出 6 月 M13 备考材料</b><div class="d" data-page-node-id="1fljBB9S4hXyftjpFgqopy">真题、笔记、成绩单。本周就做缺口扫描，产出补漏清单——这是 M13 二战的全部地图。</div></div></div>
+  <div class="kpis">
+    <div class="kpi"><div class="n">94h</div><div class="l">视频总量<br>(M13 39 + M12 55)</div></div>
+    <div class="kpi"><div class="n">16h</div><div class="l">每周最低线</div></div>
+    <div class="kpi"><div class="n">15周</div><div class="l">9/14→12/26</div></div>
+    <div class="kpi"><div class="n">68节</div><div class="l">M13 13 + M12 55</div></div>
   </div>
 
-  <h2 data-page-node-id="ajO1IH4NwC9MRrBcBM2XwD">一、按星期几排的每周模板（主窗口 18–20h）</h2>
-  <div class="note" style="margin-bottom:12px;" data-page-node-id="TrU32mqSOjh3bfgkJlsiXJ">核心原则：不起早 → 所有整块学习从<b data-page-node-id="x6wjHXBTwYLscmTKGreRmW">下午/晚上</b>开始；周日一二为 Day-off，其中 1.5 天给放松，剩下时间给 HKICPA；周三到六上课日靠课前/课后碎片，不累加早间。</div>
+  <h2>一、每周模板（16h 底线 · 按你的课表）</h2>
+  <table>
+    <tr><th style="width:76px;">星期</th><th style="width:88px;">时段</th><th>任务</th><th style="width:56px;">时长</th></tr>
+    <tr><td class="day">周一</td><td>上午放松<br>14:00–21:00</td><td><span class="tag m12">M12 视频</span>2–3 节 + 当天例题重做；M13 错题卡 15 分钟</td><td>5–6h</td></tr>
+    <tr><td class="day">周二</td><td>14:00–22:30</td><td><span class="tag">输出主战场</span>限时手写真题 2h + M13 精看 1 节 + 复盘</td><td>6–7h</td></tr>
+    <tr><td class="day">周三</td><td>课后 19:30–21:30</td><td><span class="tag m12">M12 视频</span>1 节（1.25×）+ 例题重做</td><td>1.5–2h</td></tr>
+    <tr><td class="day">周四</td><td>课后 19:30–21:30</td><td><span class="tag">M13 视频</span>1 节（红题章节精看）+ 笔记</td><td>1.5–2h</td></tr>
+    <tr><td class="day">周五</td><td>白天 10:00–16:00</td><td><span class="tag m12">M12 视频</span>3 节（1.25×）+ 例题；晚上上课</td><td>4–5h</td></tr>
+    <tr><td class="day">周六</td><td>课后 16:00–20:00</td><td><span class="tag warn2">作业块优先</span>Master 作业；无作业则 M13 真题 2h</td><td>0–4h</td></tr>
+    <tr><td class="day">周日</td><td>—</td><td><span class="hl">完全休息 + 20:00 周自检打卡</span></td><td>0.5h</td></tr>
+  </table>
+  <div class="note"><b>每周配比：</b>视频 ≤ 9h（M12 5–6 节 + M13 1–2 节）· <b>手写输出 ≥ 6h</b>（这是拿分关键，不能省）· 复盘/错题 1–2h。周合计 16–19h。</div>
 
-  <div class="schedule-day" data-page-node-id="tOfBAFnPo6RkpKKl7ESvAb">
-    <h4 data-page-node-id="H2dK86k1NJT3LzEESzDkeO"><span class="tag-rest" data-page-node-id="rUlvrTty5m0Rvap2IApKzC">放松日</span>周日 · 完全休息</h4>
-    <p data-page-node-id="3GiIJllCF6ZYVrWa3mt9Qs">不安排任何 HKICPA。运动、社交、补觉、看剧——这一天是用来对冲整周压力的。</p>
-  </div>
+  <h2>二、四阶段作战计划</h2>
 
-  <div class="schedule-day" data-page-node-id="0ZjQcXYLdypDqtDFaD0Uso">
-    <h4 data-page-node-id="jYLfhA971XUEyxJqzTTWyU"><span class="tag-rest" data-page-node-id="Gn1qEB7RD4PVCOX1ILC1BZ">放松 + 学习</span>周一 · 约 5–6h</h4>
-    <p data-page-node-id="WIU1zFKzaLfJXiiB1Wg8ho"><b data-page-node-id="moCM8dHRXGWSXiQmmY5CBD">上午–中午（≈3–4h 放松）</b>：睡懒觉、运动、早午餐/社交。这是你每周 1.5 天放松的另一半。</p>
-    <p data-page-node-id="P5fToAjY0ZvGke4btic5eQ"><b data-page-node-id="ul57KgMOXkX3Gebg4480H4">下午 14:00–17:00（3h）</b>：M12 视频输入（1.25–1.5 倍速）或 M13 补漏专题。整块时间做"新学"。</p>
-    <p data-page-node-id="nLwpPvMdmbBAaJmSowOW2a"><b data-page-node-id="bNEx9H48bADMuI4sWamyQx">晚上 19:30–22:30（3h）</b>：例题重做 / 错题复盘。输出型任务，不看不熟悉的新视频。</p>
-  </div>
-
-  <div class="schedule-day" data-page-node-id="KtykaEkxz38FTxCpmxp0JL">
-    <h4 data-page-node-id="7KeXs3AVK0BVT04YAO1dv4"><span class="tag-study" data-page-node-id="IuJSAp0fktrL0LuxDKGbrW">整块学习日</span>周二 · 约 6–7h</h4>
-    <p data-page-node-id="d6EYD9vgVCnGOUYnyREyEJ"><b data-page-node-id="2ZKXxhkbvh7UFt4ZP9oTQy">下午 14:00–17:00（3h）</b>：M12 视频或专题讲义。</p>
-    <p data-page-node-id="Gs2csGFeG8FTLe5Ej6lq73"><b data-page-node-id="NcGQDTzh7f0l16CI06712I">晚上 19:30–22:30（3–4h）</b>：限时手写真题 / mock（核心输出）。周二晚上是每周最重要的输出时段之一。</p>
-    <p data-page-node-id="KeqMlH2uemvCHGw25EJO3O">如果周一被社交/休息占满，周二补到 7–8h。</p>
-  </div>
-
-  <div class="schedule-day" data-page-node-id="wcMqDjYYzHUPcrGiTubbF6">
-    <h4 data-page-node-id="5WN6hBMXA3qLd0zjZCbttD"><span class="tag-class" data-page-node-id="voNx0jitjMhOE8fdCAQDr3">上课日</span>周三 · 约 1.5–2h</h4>
-    <p data-page-node-id="HADmIGRcr7uTFV6jiKDELE"><b data-page-node-id="jEr8KgN3FFLEQTRi6wjh8b">15:00–18:00 IS5940 上课</b>。</p>
-    <p data-page-node-id="iiYCdJD9J6ebl4cU41uZIS"><b data-page-node-id="bjHbjsjGWglkMHBvDL7Hkh">上午 10:30–12:00（1.5h，可选）</b>：M13 错题本滚动 / 框架卡片快速过。不开启新专题。</p>
-    <p data-page-node-id="d0453YH9yUXsMA5hIm71FZ"><b data-page-node-id="ZSzI4LT5bJPV7HQEhgYriu">晚上 20:00–21:30（1.5h）</b>：KAPLAN 例题重做或整理笔记。晚上不熬太晚，留睡眠。</p>
+  <div class="card phase">
+    <h3>① 重建期 · 9/14 – 10/11（4 周）</h3>
+    <div class="meta">M13 二战优先 + M12 起步｜每周 16h</div>
+    <ul>
+      <li><span class="tag">M13</span>每周 2 节（<b>先啃 P0 红题</b>：Q9 持续经营 → Q2 公允价值 → Q3 ITGC），倍速 1.25×，跟后重做该题</li>
+      <li><span class="tag m12">M12</span>每周 4 节 → 4 周推进 <b>Video 01–16</b>（Ch1 基础 + Ch2 + Ch15 + Ch8 起步）</li>
+      <li><span class="tag red">硬指标</span>M13 红题 Q9/Q2/Q3 全部完成"框架卡 + 重做真题"</li>
+    </ul>
   </div>
 
-  <div class="schedule-day" data-page-node-id="FMwIi0RCbP5BYHLedlXJop">
-    <h4 data-page-node-id="cqImQIYqTYJVG0dhlOlj0k"><span class="tag-class" data-page-node-id="q0drqZsar2AlFpmaYswbIC">上课日</span>周四 · 约 1.5–2h</h4>
-    <p data-page-node-id="R8fkIgVDAlbAaLuxUACAPA"><b data-page-node-id="6m6YV3umitqTmjPracbWAn">15:00–18:00 IS5740 上课</b>。</p>
-    <p data-page-node-id="2k5VF4CAB4pQZe7PsnAwjT"><b data-page-node-id="PlltD2eF8135ijLM4MlsUn">上午 10:30–12:00（1.5h，可选）</b>：M13 错题卡 / 零散知识点。</p>
-    <p data-page-node-id="foGpQoX2xOpwOEiFn4PQF8"><b data-page-node-id="r3f6nDVTBKmgLW0WZnvdHD">晚上 20:00–21:30（1.5h）</b>：M12 讲义复习或轻量视频。</p>
+  <div class="card phase p2">
+    <h3>② 主力期 · 10/12 – 11/15（5 周）</h3>
+    <div class="meta">M12 主线加速｜每周 16h</div>
+    <ul>
+      <li><span class="tag m12">M12</span>每周 6 节 → 5 周推进 <b>Video 17–46</b>（Ch3 大章 + Ch4–7 核心）</li>
+      <li><span class="tag">M13</span>视频收尾（每周 1 节）+ <b>真题限时手写</b>每周 3h</li>
+      <li><span class="tag red">硬指标</span>10 月底完成 M13 完整限时摸底（定 baseline）</li>
+    </ul>
   </div>
 
-  <div class="schedule-day" data-page-node-id="6gKaItgkyUvMn6WGMdBGtF">
-    <h4 data-page-node-id="AtiP2J9kqMplkETxBfhEia"><span class="tag-class" data-page-node-id="Bt8yMLhTMwsfz0s3gbuto9">上课日 + 白天学习</span>周五 · 约 5–6h</h4>
-    <p data-page-node-id="68TnJwiiGAmOD9TRSH7ZJF"><b data-page-node-id="j0uKeQhPibtvAGBFHBZUTQ">白天 10:00–16:00（4–5h，整块）</b>：M12 视频输入或 M13 专题补漏。这是你一周内除周一二外最完整的白天学习块。</p>
-    <p data-page-node-id="dG5W50QePIbmp9E43lNfjX"><b data-page-node-id="2QVBu2GQuMcZ5BAR5HisPq">19:00–22:00 IS5411 上课</b>。</p>
-    <p data-page-node-id="th2n6wR5pbZHZlP8MZM8fw"><b data-page-node-id="jQnJV9XQ2jwUWLwfeGKipy">课后 22:00–23:00（1h，可选）</b>：只翻错题本 / 框架卡片，不开启新内容。</p>
+  <div class="card phase p3">
+    <h3>③ 红区 · 11/16 – 12/6（3 周）</h3>
+    <div class="meta">Master 期末优先｜HKICPA 只保热感 2–3h/周</div>
+    <ul>
+      <li>不碰新课、不看新视频</li>
+      <li>每天 20–30 分钟：翻框架卡 + 错题，维持记忆痕迹</li>
+      <li><span class="tag red">原则</span>接受遗忘，别焦虑式两线作战</li>
+    </ul>
   </div>
 
-  <div class="schedule-day" data-page-node-id="7hxz75CTWn65HtfRHdyyy8">
-    <h4 data-page-node-id="oMSaJZSbybUyrLpr5uwdUY"><span class="tag-class" data-page-node-id="jJGAUBwySOL0POn2qD5K1H">上课日 + 晚上休整</span>周六 · 约 0.5–1h</h4>
-    <p data-page-node-id="3zHCHPt6Xi1SKFAEtigrRf"><b data-page-node-id="BH7vf5h0VooPrmfMpBfmo5">09:00–12:00 IS5542 / 13:00–16:00 IS5312 上课</b>。</p>
-    <p data-page-node-id="ofncmIRBTrpmppIl2NLdcC"><b data-page-node-id="1SOEypOu9TbiyPvWcfU5BW">晚上 19:30–20:30（1h）</b>：M13 错题卡滚动。周六重点在上课，晚上只保温，不硬撑。</p>
-    <p data-page-node-id="DOkuRVorlkpY3R4fr6mYLq">若白天上课太累，周六晚上学习可取消——休息优先。</p>
+  <div class="card phase p4">
+    <h3>④ 冲刺期 · 12/7 – 12/26（3 周）</h3>
+    <div class="meta">补完 + 真题 + mock｜每周 16–18h</div>
+    <ul>
+      <li><span class="tag m12">M12</span>补完 <b>Video 47–55</b>（Ch13 + Ch10 + 结尾 3 节）</li>
+      <li><span class="tag">M13</span>限时手写真题 ≥2 套 + 错题回炉</li>
+      <li><span class="tag warn2">12/21 后</span>不再看任何新课，只刷错题 + 框架</li>
+      <li><span class="hl">12/27 M13 · 12/28 M12</span></li>
+    </ul>
   </div>
 
-  <div class="card" style="margin-top:10px;" data-page-node-id="VdgM0lGUSgpFkPhmxHV57k">
-    <div style="font-size:13px; color:#d7e2ea; margin-bottom:8px;" data-page-node-id="1Zg5HwbVdPu73J69hMOyKB"><b data-page-node-id="DRoyBwfdOUJvz0NylL8Yr9">每周小时加总</b></div>
-    <div style="font-size:13px; color:#c6d2da;" data-page-node-id="4v30EWyD5CZQV66D26GHJ7">
-      周一 5–6h + 周二 6–7h + 周三 1.5–2h + 周四 1.5–2h + 周五 5–6h + 周六 0.5–1h + 周日 0h<br data-page-node-id="8i3b0ni05E2gxGuAaEI0zV">
-      = <span class="hl" data-page-node-id="J8YmhPWE6wDrLzTABHGFTE">18–22h/周</span>。其中周一二是主力输出日，周五白天是次主力，周三/四/六是保温日。
-    </div>
+  <h2>三、视频推进表（照着看，不迷路）</h2>
+  <table>
+    <tr><th style="width:110px;">阶段</th><th>M12（55 节）</th><th>M13（13 节）</th></tr>
+    <tr><td class="day">① 重建期</td><td>每周 4 节 → 累计到 <b>Video 16</b></td><td>每周 2 节 → 累计到 <b>第 8 节</b></td></tr>
+    <tr><td class="day">② 主力期</td><td>每周 6 节 → 累计到 <b>Video 46</b></td><td>每周 1 节 → <b>13 节收尾</b></td></tr>
+    <tr><td class="day">③ 红区</td><td colspan="2">暂停（保热感）</td></tr>
+    <tr><td class="day">④ 冲刺期</td><td>补完 <b>Video 47–55</b></td><td>真题 + mock（不看新课）</td></tr>
+  </table>
+  <div class="note"><b>倍速策略：</b>M12 全新科统一 <b>1.25×</b>（熟悉章节 1.5×）；M13 二战 <b>1.25–1.5×</b> 且只精看红题章节，黄题章节可直接跳过视频、只看框架卡。<br><b>M12 重点章：</b>Ch7（13 节）+ Ch3（9 节）占全课 40%，这两章要放慢、多做题。</div>
+
+  <h2>四、严格机制（惰性防火墙）</h2>
+  <div class="card">
+    <h3>三条线</h3>
+    <ul>
+      <li><b class="hl">绿线 · 达标</b>：每周 ≥16h 且手写输出 ≥6h → 正常推进</li>
+      <li><b style="color:#ffd9a0;">黄线 · 警戒</b>：单周 &lt;16h → 下周必须补到 18h；<b>连续两周 &lt;16h</b> → 立即与小爪重排计划（砍内容，不硬扛）</li>
+      <li><b style="color:#f0b9b6;">红线 · 干预</b>：单周 &lt;10h 或主力块（周一/周二/周五白天）连续两周失守 → 启动"降级预案"（先保 M13，M12 转 2027 年 6 月）</li>
+    </ul>
+    <h3>周自检（每周日 20:00，日历已设提醒）</h3>
+    <ul>
+      <li>本周实际小时数？（记进追踪文件）</li>
+      <li>M12 推进到第几节？M13 到第几节？</li>
+      <li>手写真题做了几套/几题？</li>
+      <li>下周的课表 / 作业 / 考试有什么变化需要排进去？</li>
+    </ul>
+    <h3>惰性应对（写给状态差的自己）</h3>
+    <ul>
+      <li><b>启动门槛降到最低</b>：不想学时只要求"看 1 节课 / 做 1 道题"，往往开始了就停不下来</li>
+      <li><b>固定时间比意志力可靠</b>：周一/周二 14:00 到点就坐下，不问想不想学</li>
+      <li><b>缺席不补双倍</b>：漏一天就漏一天，第二天照常节奏，别用"补债"压垮自己</li>
+      <li><b>每周日自检 + 跟小爪同步</b>：进度透明，不放任滑坡</li>
+    </ul>
   </div>
 
-  <h2 data-page-node-id="GRqI8f77IB30m3chs9KAzZ">二、16 周作战日历</h2>
-  <div class="legend" data-page-node-id="pgOaWfLB2O4aTv95kSVtKI">
-    <span class="lg" data-page-node-id="0ynstG4KSHilnxBVGqV1st"><span class="dot" style="background:#1d3a30" data-page-node-id="x6WBMNf4yzjHeho6EJvRza"></span>启动期（复盘+预习）10–12h/周</span>
-    <span class="lg" data-page-node-id="DScTBl8aTBuKBo8BKBg5A3"><span class="dot" style="background:#14432f" data-page-node-id="WA566PcNWhscWiHzNC88sy"></span>主力窗口 18–22h/周</span>
-    <span class="lg" data-page-node-id="zDXQvSZWjguss0l1Xr0T1d"><span class="dot" style="background:#4a1f1d" data-page-node-id="OxUSi3PlDqn4yO02kgrFnl"></span>Master 红区 2–3h/周</span>
-    <span class="lg" data-page-node-id="MME40MVz79vSa8HmS6Zt2p"><span class="dot" style="background:#1d2f4a" data-page-node-id="WG5Du6mmI7AK1dK1yyeFcJ"></span>冲刺 16–18h/周</span>
-    <span class="lg" data-page-node-id="RUxGqDxXxHVwd7mbog83ob"><span class="dot" style="background:#3a2a12" data-page-node-id="YgBxSqClCAD9yd2NwMWW93"></span>工作坊/考试</span>
-  </div>
-  <div class="tl" data-page-node-id="hXccowFc5PNWdCCV8jkFT7">
-    <div class="cell c-prep" data-page-node-id="nUbkxruEMARnRsR0iFk77l"><span class="w" data-page-node-id="CNu9JWbtERroA6KCE8xrXR">W1</span><span class="r" data-page-node-id="AwqLWBqgNsDlda63eMFFvU">9/7–13</span><span class="m" data-page-node-id="cgCChA9nAt5gT0gcfwCsiA">M13 缺口扫描<br data-page-node-id="n7lunQCJDeGQlHcVnxt4AP">M12 预习①</span></div>
-    <div class="cell c-prep" data-page-node-id="RzQ0ePBFZj4g2cAGLj7Tmp"><span class="w" data-page-node-id="8weKfI3dmbQ1tIDWNLPHmD">W2</span><span class="r" data-page-node-id="D6LUOgTmzRPV5hOYnE5mLv">9/14–20</span><span class="m" data-page-node-id="AdB3L23DBqgz6N1w5JYHEV">M13 补漏清单<br data-page-node-id="fGoVuiYfQ6FcsvaE6Om7vQ">M12 预习②</span></div>
-    <div class="cell c-prep" data-page-node-id="byDnwZFtnWLZNjGt8i8Fqg"><span class="w" data-page-node-id="sskMeZjC9LOvTzvRD9jHwi">W3</span><span class="r" data-page-node-id="PCYbdmMExkVirK6RrqRbuk">9/21–27</span><span class="m" data-page-node-id="BxA0PN5Eq50ggC3z5QGyPW">M13 弱项回温<br data-page-node-id="l7YlYfT8DiSexGW6Vd4KmL">M12 预习③</span></div>
-    <div class="cell c-prep" data-page-node-id="tkofN3L8SkeKD1fv53V1o3"><span class="w" data-page-node-id="HTsCCBeoCOsGGSyzmz10x1">W4</span><span class="r" data-page-node-id="cSH9rhFkbzJyFDGi8MFa5S">9/28–10/4</span><span class="m" data-page-node-id="TwB2a2qPV8dTG0UDJ1D64R">长假<br data-page-node-id="5N9r74agcR6D0nFyTbpg4R">M12 精讲起跑</span></div>
-    <div class="cell c-main" data-page-node-id="jGpajNfcqcBxtZQSEYKG03"><span class="w" data-page-node-id="hvSP3GQVxzmgrVRYrNLVdE">W5</span><span class="r" data-page-node-id="hONaN5M6CUxAj6B0nxOB4L">10/5–11</span><span class="m" data-page-node-id="vl7STavPvJVngdqsWXkpt9">M12 精讲<br data-page-node-id="OEpW5L8GO2smbSHuvXs9AP">18–22h</span></div>
-    <div class="cell c-main" data-page-node-id="eiMs0vFpFdX2VliwXCc1pc"><span class="w" data-page-node-id="ubFeN3xkJSDmoHl6o29GjA">W6</span><span class="r" data-page-node-id="FlRpJZaVOkmRHHzhhsEWS9">10/12–18</span><span class="m" data-page-node-id="SyivTOFsbjnfRGAIWoHbFW">M12 精讲<br data-page-node-id="PaCqlCV1sieyC77O7XWYoN">18–22h</span></div>
-    <div class="cell c-main" data-page-node-id="egW9rPOOYkGOVH25MCDFyT"><span class="w" data-page-node-id="YFqCb0n0sxXlXoXDGcN5U5">W7</span><span class="r" data-page-node-id="ZJ9E7PJQUHFN6AoFOe0Ayz">10/19–25</span><span class="m" data-page-node-id="aVOGEXiCmldxPTryOYvgQP">M12 精讲收尾<br data-page-node-id="O4HJHCrJq5NDDcc44Ll3oh">18–22h</span></div>
-    <div class="cell c-main" data-page-node-id="SI6dMvMRNuBXrane4TB349"><span class="w" data-page-node-id="TyH2IGb12TwNKZNvxjjVX8">W8</span><span class="r" data-page-node-id="nHH8fyCAsSfWCmw7aMNBl0">10/26–11/1</span><span class="m" data-page-node-id="Nvv4si7RbdmSDlRN8GHVxN">M12 二轮<br data-page-node-id="lOc5eT2Ju5t6JVuYkArHwT">M13 摸底</span></div>
-    <div class="cell c-main" data-page-node-id="QLph9p5BoNX4MbSiDC70mw"><span class="w" data-page-node-id="b9FLFsDxyAE3QfRDz3iid6">W9</span><span class="r" data-page-node-id="qT7pjEr1roOMotcNHQWd9k">11/2–8</span><span class="m" data-page-node-id="CH6G021Xhb3ZJildYEE0g6">强化收官</span></div>
-    <div class="cell c-red" data-page-node-id="5PK93YvdUxF36WtNDmsuHl"><span class="w" data-page-node-id="wu6eyml9zCQOcu4AJKZgh7">W10</span><span class="r" data-page-node-id="TBenV4UXTAkucEizGOlaqM">11/9–15</span><span class="m" data-page-node-id="zLX6Q9cme5fYQYoW5mVIgF">过渡<br data-page-node-id="ESJBmgaDOKmNdlpF4wBN7K">11/1 已过·无工作坊</span></div>
-    <div class="cell c-red" data-page-node-id="0HOpxl5pklLOqHHgHP8gRR"><span class="w" data-page-node-id="9XUijcPXUuCBlodx9sdTAL">W11</span><span class="r" data-page-node-id="giUpllM0VaI3lSQQ7D0cxZ">11/16–22</span><span class="m" data-page-node-id="iWw5UExMonYWq0A6CHUOjD">Master 期末<br data-page-node-id="XQTOvTWWXgMRlgVhcRLv25">保热感 2–3h</span></div>
-    <div class="cell c-red" data-page-node-id="IzHuo9d14Q6fA7rVplL05E"><span class="w" data-page-node-id="jODg8R12N2Wp83JbMP8qnK">W12</span><span class="r" data-page-node-id="btoTKnE1RuuRxKdngw3H3C">11/23–29</span><span class="m" data-page-node-id="vqVyFY9QVW4MSsLLGG67Ne">Master 期末<br data-page-node-id="xbHu7JnCQsjbDy3GiSYZ5Z">保热感 2–3h</span></div>
-    <div class="cell c-red" data-page-node-id="nRpAmkvuutTcrQUpxjVWcq"><span class="w" data-page-node-id="FhC2kSvnuCRsnfkN7VWPUV">W13</span><span class="r" data-page-node-id="DJu7YUWoVytmD4guefF3HR">11/30–12/6</span><span class="m" data-page-node-id="K6d3Jgz2PECOw9C4Vg7PIa">Master 收尾</span></div>
-    <div class="cell c-spr" data-page-node-id="3MV3zQdSuRoTnTL9PbpxeE"><span class="w" data-page-node-id="w0sQUwmtKxcNgt69A2gS8L">W14</span><span class="r" data-page-node-id="9mx1zbjbY8b9AIrR8OYe0V">12/7–13</span><span class="m" data-page-node-id="44eNsmDjvOsI48n9Vde1U6">回温<br data-page-node-id="KPaGUDtNJGktBgGgYBeF98">M13 真题×2</span></div>
-    <div class="cell c-spr" data-page-node-id="MjdBczOtfJmSYLpSjuHbJc"><span class="w" data-page-node-id="MDCKsTqrJtKTKer3q6csDa">W15</span><span class="r" data-page-node-id="hNGuMNerAw4cDVElxCfC9v">12/14–20</span><span class="m" data-page-node-id="QErM9nKeGZyDbQDEpFtuqQ">M12 真题×3<br data-page-node-id="H1V6XeAOPvGKPJDbG88u7A">M13 补漏</span></div>
-    <div class="cell c-spr" data-page-node-id="CHLT3apuldgVW6FYr9YEKz"><span class="w" data-page-node-id="kt3Ua7Pd34PAyHzz7nNCss">W16</span><span class="r" data-page-node-id="QevgbGpDeRi9FetXrrPN55">12/21–26</span><span class="m" data-page-node-id="tGkYRMfy56TLBBdQOnBeke">错题+状态<br data-page-node-id="wzHYGenEthWNeemaLt7sHE">不学新东西</span></div>
-  </div>
-  <div class="card" style="display:flex; gap:10px; align-items:center; margin-top:8px;" data-page-node-id="CGxtMkwGQMCrMC41gA1rCl">
-    <span style="color:#ffd9a0; font-weight:600; font-size:13px;" data-page-node-id="D0e6skaEBndCIngsMtUpmg">12/27（日）M13 · 12/28（一）M12</span>
-    <span style="color:#9fb0bd; font-size:12.5px;" data-page-node-id="ufwQVl4VWpu3qUOyW0c66s">两科分两天考，一天一门。成绩约 2027/2/25 公布。</span>
-  </div>
+  <h2>五、小时总账</h2>
+  <table>
+    <tr><th>阶段</th><th>周数</th><th>周投入</th><th>小计</th><th>主要产出</th></tr>
+    <tr><td class="day">① 重建</td><td>4</td><td>16h</td><td>64h</td><td>M13 红题重建 + M12 起步 16 节</td></tr>
+    <tr><td class="day">② 主力</td><td>5</td><td>16h</td><td>80h</td><td>M12 推进到 46 节 + M13 真题</td></tr>
+    <tr><td class="day">③ 红区</td><td>3</td><td>2.5h</td><td>7.5h</td><td>保热感</td></tr>
+    <tr><td class="day">④ 冲刺</td><td>3</td><td>17h</td><td>51h</td><td>M12 补完 + 两门真题/mock</td></tr>
+    <tr><td colspan="3"><b>合计</b></td><td><b>≈202h</b></td><td>需求 ≈132–145h（倍速后）→ 余量 55–70h</td></tr>
+  </table>
+  <div class="note">余量 55–70h 是<b>安全垫</b>：用于状态差时的缓冲、Master 作业高峰、以及 12 月突击补漏。<b>跌破 120h 总计才触发止损（保 M13）</b>——目前离得很远，放心。</div>
 
-  <h2 data-page-node-id="wj158joCZxz1znNEu0PkBA">三、四个阶段 · 做什么、花多少小时</h2>
-  <div class="card" data-page-node-id="vSs2ndKv3p3vNB2PgKyDxq">
-    <div class="ph" data-page-node-id="aJWjLVBV4WUZEZtAZccenP"><div class="tag" data-page-node-id="T8RG6qRZCEk780lUYqfyGv"><div class="name" data-page-node-id="0U99LN6GiW9DkXRneEVBHr">阶段 1 · 启动期</div><div class="dates" data-page-node-id="iKAC5vqVGRyUkz5H3T3W1r">9/7 – 10/4</div><div class="hrs" data-page-node-id="OTuo7aYUIvPBzOAXrGX4hF">每周 10–12h</div></div>
-      <div class="body" data-page-node-id="3RoQPTjVGfaiF1zx4eHCCk"><ul data-page-node-id="p5EdYezvWcDsACFKE62DwA">
-        <li data-page-node-id="yMTHSXOKOdi5w4MVDQsOr5"><b data-page-node-id="LYVxpfuF9UzYrKiAgRphM0">M13 复盘（前两周主力，≈20h）</b>：拿 6 月真题 + 成绩单做缺口扫描——按 syllabus 逐 topic 标出"没学 / 学了不会 / 考场失分"，产出一份<b data-page-node-id="paBqRYuZfXXD5rM9r7A4co">补漏清单</b>，它就是 M13 全部自主复习的地图，别整本重读。</li>
-        <li data-page-node-id="O2X6db8EUAABgO97aOQ0BB"><b data-page-node-id="NO18L4ztd7G0FGJujZ8cN1">M12 预习（穿插，≈12h）</b>：读 KAPLAN 讲义前 2–3 章搭骨架；精讲开始时你在"查缺"，不是在"听天书"。</li>
-        <li data-page-node-id="yLibsHxObMPeysFDvGBpdU">录播纪律：9 月只看 M12 前 2–3 讲"探路"，主体视频仍锁 10 月主窗口。</li>
-        <li data-page-node-id="bUYGc6lRQHM19JBsbvQi9a">长假（9/28–10/4）：M12 精讲正式起跑 + M13 弱项回温，可冲 16–18h，但留 2–3 天彻底休息防 burnout。</li>
-      </ul></div>
-    </div>
-    <div class="ph" data-page-node-id="TBZU3OMWd6EybCpFyui5My"><div class="tag" data-page-node-id="DFr5eZJT7hYROhrAhe1fOm"><div class="name" data-page-node-id="wBVllzOUPlFnoZVrr1pYyn">阶段 2 · 主力窗口</div><div class="dates" data-page-node-id="uNIVpHwXv6nwCA1mZasXSU">10/5 – 11/8</div><div class="hrs" data-page-node-id="eX3ds5MfgB1ktmxUGWW7U5">5周 × 18–22h ≈ 100h</div></div>
-      <div class="body" data-page-node-id="5eK9sxlCSr1Ec3t69dOKvm"><ul data-page-node-id="z4k3J0pZzWlU5rGbQANoBt">
-        <li data-page-node-id="UJLxfa8uaET6eI8VGBIyvo"><b data-page-node-id="VyaTqccHmLs0YuHOtPkzkf">M12（全新，视频主线，占 ~65h）</b>：10/5–10/25 三周看完精讲（每周约 5–6h 视频），每节次日把讲义例题<b data-page-node-id="uJsAjPKclKXVk0QOpMwDJc">合上答案重做</b>；10/26–11/8 二轮：按 topic 分类刷真题 + 框架笔记完善（开卷考 = 翻得到 + 答得出）。</li>
-        <li data-page-node-id="GH44XpxmX03QipTwtnVwxb"><b data-page-node-id="LMyOygdBsibV7hYJDo0uC6">M13（二战，选择性看，占 ~35h）</b>：视频只挑补漏清单章节，已掌握的倍速或跳过；每周 4–5h 按清单补漏 + 重做 6 月失分题；10 月底做一次<b data-page-node-id="DHyeMxtEq0JC7dUK7YQbGE">完整限时摸底</b>定 baseline。</li>
-        <li data-page-node-id="jtGURpU7YbJRb8rL3FA5aT"><b data-page-node-id="OQvhpzDoNeUDtOXzYnvtCd">11/1（周日）M12 工作坊</b>（W8 末，已确认；M13 免工作坊）。workshop 本身是 case 输出训练，当天当学习不算占用。<b data-page-node-id="OQvhpzDoNeUDtOXzYnvtCd2">加量部分优先给"输出"</b>——真题手写和例题复盘，不是再多看视频。</li>
-      </ul></div>
-    </div>
-    <div class="ph" data-page-node-id="5r9GgMCdvAhJRpD471cqjX"><div class="tag" data-page-node-id="WIqJ1qG9sm9uf5FDEUkHoy"><div class="name" data-page-node-id="lppIacBypBQgWwtVMtIQkk">阶段 3 · Master 红区</div><div class="dates" data-page-node-id="EkHFqVZEodVUaAK7OAzjVm">11/9 – 12/6</div><div class="hrs" data-page-node-id="T60OVAW5GRjjPoJsZU3j9I">每周 2–3h</div></div>
-      <div class="body" data-page-node-id="XKmbQbXzpoyDWKMretRzzD"><ul data-page-node-id="yOZcNfXO8WHrhKtTIj7afY">
-        <li data-page-node-id="6DJAbCiDQmZA6NDTAJB2yt">整块时间全部让给 Master 期末。<b data-page-node-id="dAJehFewvWvsF5j1RvFC3x">HKICPA 只做两件保热感的事</b>：M13 错题本滚动 30 分钟 + M12 框架笔记快速重翻 30 分钟（拆成每天 20 分钟也可）。</li>
-        <li data-page-node-id="tWvrwVDSrF6hkw8KVDirHO">红区无工作坊占用（11/1 M12 工作坊已在红区前完成），整段时间全归 Master 期末，无需请假。</li>
-        <li data-page-node-id="JrzLh5Oyoxn3vxPeAWMCaS">录播红利兑现：红区里完全不碰视频，revision / mock 攒到 12/7 冲刺期统一消化。</li>
-        <li data-page-node-id="0SE6MG6tB895mQGTbSJFGF"><b data-page-node-id="VUtNAac9ujI7avg4Di1pGp">接受 3 周不刷题。</b>遗忘正常，12 月回温周拉回来——Master 期末崩了影响毕业，这阶段 Master 优先是理性取舍。</li>
-      </ul></div>
-    </div>
-    <div class="ph" data-page-node-id="1MpjvAdcFFnnjunNqqoV4o"><div class="tag" data-page-node-id="xQCYvXRqNNTy2P1lBDuISQ"><div class="name" data-page-node-id="2P0SwdicKnDJQ063euh8Qk">阶段 4 · 冲刺</div><div class="dates" data-page-node-id="Xojhid7uHnrguCt5FBvHnR">12/7 – 12/26</div><div class="hrs" data-page-node-id="CWrA781SKDVb8mlfqBIgJb">3周 ≈ 50h</div></div>
-      <div class="body" data-page-node-id="2CRKV8g1LXMd6WdIJwBSfg"><ul data-page-node-id="0nBHveElGaBAZhNauOv3o0">
-        <li data-page-node-id="jcXNv6HLkRJRHRh5OQ92vt">12/7–12/13 回温周：看 revision 视频 + 消化 mock（限 3–4 个，别贪多）；M13 限时手写真题 1–2 套拉回手感。</li>
-        <li data-page-node-id="SKyaihpJIzwsGgqJg3Kp58">12/14–12/20：M12 真题 2–3 套 + M13 按错题补强。<b data-page-node-id="xGO0SpiXlOVNBvAcSrKgWv">手写输出 ≥40%</b>——挂科主因从来是"看得懂、写不出得分点"。</li>
-        <li data-page-node-id="3n8VKShRyRijXcphvYb8cj">12/21–12/26：只看错题本 + 框架卡片，调作息。<b data-page-node-id="RnSYoOJimNwNHVIBfZTVrI">不追任何新课</b>，没看完的录播果断放弃。</li>
-        <li data-page-node-id="20N9BBhwsKqzViOXFJ8iZi">12/27 M13 → 12/28 M12。</li>
-      </ul></div>
-    </div>
-  </div>
+  <h2>六、风险与预案</h2>
+  <table>
+    <tr><th style="width:130px;">风险</th><th>预案</th></tr>
+    <tr><td class="day">状态滑坡<br>（连续低产出）</td><td>黄线触发 → 砍视频量（M13 黄题章节直接跳过），保住"手写输出"不缩水；同步小爪重排。</td></tr>
+    <tr><td class="day">Master 作业挤占</td><td>周六作业块优先给作业；被占的周一/周二主力块当周必须补回，不得连续两周失守。</td></tr>
+    <tr><td class="day">M12 视频看不完</td><td>优先保 Ch7、Ch3 两大章（占 40% 分值逻辑）；Ch13/Ch15 等小章可冲刺期倍速横扫。</td></tr>
+    <tr><td class="day">红区遗忘</td><td>接受。红区后 12/7–12/13 是"回温周"（已排），用错题 + 框架卡快速捡回。</td></tr>
+    <tr><td class="day">KAPLAN 往年课<br>与 2026 大纲差异</td><td>10 月前对照 2026 年 12 月考季 syllabus 核对（可持续披露/数据分析等新主题），缺的用官方资料补。</td></tr>
+  </table>
 
-  <h2 data-page-node-id="T5EoRQAxrYBXvSdVPUTPxD">四、风险与预案</h2>
-  <div class="card" data-page-node-id="e0FEkUGhf9X1X2fnJno9jn">
-    <table data-page-node-id="IIkHGIZB4pW2WiP4xNumz5">
-      <tr data-page-node-id="dZorg6ZKfjXrKrUzHWIAWI"><th style="width:34%;" data-page-node-id="TVwZufRR0Q4nFZYRqgYSJl">风险</th><th data-page-node-id="GqF8X2rXN33s5fC1KuYEEA">预案</th></tr>
-      <tr data-page-node-id="AgyQnaX1vF2J3B0ATXfNsB"><td class="risk" data-page-node-id="8sAhb1N9QFvFLnSyqhcWlt"><b data-page-node-id="3a1BWuT8Zx3gZMQ9aCWyEj">熬夜导致白天整块学习睡过去</b></td><td data-page-node-id="EaKU7CMH0XbqB4Cmno8Viz">周一/二下午 14:00 开始学习是底线——再晚就要吃掉晚上输出时间。若某天中午才起床，直接取消上午 optional 学习，保住下午+晚上。</td></tr>
-      <tr data-page-node-id="KZULjbRhV7rdCkeEnbZ5e0"><td class="risk" data-page-node-id="CbG8w32p2djk6Tho94jCn2"><b data-page-node-id="Zm6EEFkggNhmMaJP0YoGc3">周五白天被小组作业/琐事占满</b></td><td data-page-node-id="UtUbmC4oA7wRQMujeJghU9">周五白天是次主力块，若被占，当周必须拉到 22h（周一二补）。连续两周周五失守 → 触发警戒线。</td></tr>
-      <tr data-page-node-id="VvD5uIshxoONHfAZrz8mVn"><td class="risk" data-page-node-id="58qiu3T3tyHIQlKbwGuf7X"><b data-page-node-id="WFQBMcoh2VDfr2fgcR2aSA">周六上课太累，晚上完全不想学</b></td><td data-page-node-id="I2kgBb6QAu4KFOrjaRIfCU">允许周六晚上直接取消学习。用周日完全休息换周六晚上的"战略性放弃"，不累积愧疚。</td></tr>
-      <tr data-page-node-id="vYMTWHB1aGPqUFJThSfXPD"><td class="risk" data-page-node-id="sfpMu0GEwf2RyPNED8moy8"><b data-page-node-id="jwA8TyghFZl3lMVhhzbkLo">社交/放松 1.5 天不够用</b></td><td data-page-node-id="eZ15nIPqGXITQxNNEAsF6H">周日雷打不动休息；周一上午可弹性延长到中午。若某周社交多，把周三/四上午 optional 也砍掉—— those 本来就是保温时间。</td></tr>
-      <tr data-page-node-id="ty60s4nBWGNhfBO59YE9Fi"><td class="risk" data-page-node-id="GnZ7QCSXkrWubMp00myYAQ"><b data-page-node-id="IbeBJbK1OMTV66qyJnrFmZ">红区断档 3 周 → 记忆衰减</b></td><td data-page-node-id="6kAOaM5hzVzKUfRSI9SeeL">维持量 2–3h/周只做错题与框架回顾；12/7 回温周用真题强制拉回，接受"先降后升"曲线。</td></tr>
-      <tr data-page-node-id="B7HYW8uX7Hcw0aAyHPFS0n"><td class="risk" data-page-node-id="tkWgEQCp4u8ACZBvh5jf0f"><b data-page-node-id="foVtxv2cD0mjz8KPKsvokC">录播无外部约束 → 拖延积压</b></td><td data-page-node-id="EN7nWs1fHiw7nzBUtL8XID">"每周日 20:00 自检点"：视频没清零下周加倍补；积压超 2 节就砍非核心节（讲义替代），别让愧疚感拖垮整周。</td></tr>
-      <tr data-page-node-id="PUGAtuAmVQHS4rkaQv4FBG"><td class="risk" data-page-node-id="5iXI0HfyX5vdtkDxhpCqpF"><b data-page-node-id="KkPQk9DItR9d23FbyLx5eo">实际投入低于预期 → 两科同崩</b></td><td data-page-node-id="9AwMvELg5pRqExmuxhALfb"><b data-page-node-id="Zq3CqA1HzppLcOrAgNw085">警戒线 150h</b>：主窗口连续两周 <16h 即触发检视；<b data-page-node-id="GVfrc7KrFheNmHssysTo13">止损线 120h</b>：果断弃 M12 押 M13（二战、通过率占优），M12 留 2027/6 再战。</td></tr>
-    </table>
-  </div>
+  <div class="foot">小爪维护 · 数据源：KAPLAN 课程清单（M13 13×3h / M12 55×1h，2026-09-12 确认）· 每次同步后更新</div>
 
-  <h2 data-page-node-id="lAzSEWP1Tqc95EPjBPKtfC">五、小时总账（按实际课表版）</h2>
-  <div class="card" data-page-node-id="fnOxxG8BfVMEiKolNUEb8P">
-    <table data-page-node-id="E3WKKZjAr7qxRDcYyWzutT">
-      <tr data-page-node-id="3qPtIj99rYddAS6vq29hz5"><th data-page-node-id="7pHs9lKLLjuWP2RMImcd2V">科目</th><th data-page-node-id="oAGuEgECzG8ABAEurU1zvI">9/7–10/4 启动期</th><th data-page-node-id="gJ11Y9euJwAoIXTXKDT99z">10/5–11/8 主力</th><th data-page-node-id="dK7Tk4ZY06UWRh4DJDLIeI">11/9–12/6 红区</th><th data-page-node-id="PBLv14klWXg8meh3hkiq2Q">12/7–12/26 冲刺</th><th data-page-node-id="ArWTBDDNOtyD7Kx1tJ3vhA">合计</th></tr>
-      <tr data-page-node-id="sTQTuoBTLPlhpKUamVAMGg"><td data-page-node-id="eo4zGGEIMjdeC4GLEvkLpd">M13 业务鉴证（二战）</td><td data-page-node-id="zq7WK5LznjbHDv237b1BQx">≈20h</td><td data-page-node-id="926LrdUPNwNk0YDv2j6UcA">≈35h</td><td data-page-node-id="5USJPsLuadG4HgozqK1zTo">≈5h</td><td data-page-node-id="OReb8q198tWSxXqGBPYMFq">≈20h</td><td class="tot" data-page-node-id="kR3JCjgiLlkFYYErEqX6qZ">≈80h</td></tr>
-      <tr data-page-node-id="FBlkBD7ABd6J6bVMg1jVUU"><td data-page-node-id="2ZzFLV2dqsrNltPiykGdZw">M12 商业财务（新科）</td><td data-page-node-id="bLMhT6ChWPQRkw1iATfx45">≈18h</td><td data-page-node-id="wVIJzyxUGUCO4bfakiYpbH">≈65h</td><td data-page-node-id="SGyQ0RmN2EZmP7GXYrwjHp">≈5h</td><td data-page-node-id="eu7kxW5P29Ht3JRc0gLeUL">≈27h</td><td class="tot" data-page-node-id="OLqAvcV6ZY2hbF89UuSJlA">≈115h</td></tr>
-      <tr data-page-node-id="9wDGsX3vVKb1jMJYeoxDmX"><td data-page-node-id="UYsyW3QZZX0NFZF3DrzrrY"><b data-page-node-id="eGbz3EyuYElqtzRoN429dk">合计</b></td><td data-page-node-id="FDuGh6aRzwJLeqcNMKxtpA">≈38h</td><td data-page-node-id="AE0uDyTHivgG2mr8qG1xN6">≈100h</td><td data-page-node-id="TgZN4BVLKjuGu7ez2Mm7Rr">≈10h</td><td data-page-node-id="rmZ2mTEq4Qa1339qCiBNEb">≈47h</td><td class="tot" data-page-node-id="UbK3yMBTA0oS1M2FLn8Jd5">≈195h</td></tr>
-    </table>
-    <div class="note" data-page-node-id="fN7D7ogMnXEQoxobE61kH9">基于"周一二整块日 + 周五白天次主力 + 周三四六保温 + 周日休息"的课表定制模板。M12 拿到 115h 是全新科的舒适区间，M13 二战 80h 从容。<b data-page-node-id="wHO0CuVY3jRtnhGWLe9pFe">警戒线 150h / 止损线 120h（保 M13）</b>。若某周被作业/社交挤占，下周回到 18h 档即可，无需追平。建议每 2 周按实际进度校准一次。</div>
-  </div>
-
-  <div class="foot" data-page-node-id="4keOKlz9SlF31B1ZyFE9jr">参考：HKICPA 官方 2026 年 12 月考季时间表 · Master 课表：周三/四 15:00–18:00、周五 19:00–22:00、周六 09:00–16:00（Simon 提供）· KAPLAN 往年录播自定步调</div>
-</div>
 </body>
 </html>
